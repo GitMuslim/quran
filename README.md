@@ -43,6 +43,13 @@
   - [🌺 Catppuccin Macchiato](https://github.com/catppuccin/Quran/raw/main/src/QuranCatppuccinMacchiato.user.css)
   - [🌿 Catppuccin Mocha](https://github.com/catppuccin/Quran/raw/main/src/QuranCatppuccinMocha.user.css)
 3. Choose Your accent color by Setting Theme in Stylus Options
+<details>
+<summary>
+4. Make sure your base quran theme is set to auto mode
+</summary>
+
+![Help image](./assets/set-to-auto.png)
+</details>
 
 ## 💝 Thanks to
 
