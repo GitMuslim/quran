@@ -159,10 +159,10 @@
             --color-borders-hairline: #F5E0DC;       
             --color-success-medium: #F5E0DC;
         }
-            --color-background-elevated: #1E2030;
-            --color-text-inverse: #CAD3F5;
-            --color-text-default: #CAD3F5;
-            --color-text-faded: #939AB7;
+            --color-background-elevated: #E6E9EF;
+            --color-text-inverse: #E6E9EF;
+            --color-text-default: #4C4F69;
+            --color-text-faded: #7C7F93;
     }
 }
 
