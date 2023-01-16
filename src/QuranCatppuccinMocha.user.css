@@ -36,59 +36,59 @@
 
 @-moz-document domain("quran.com") {
     :root {
-        if stylus-deepdark-style=="Catppuccin-Macchiato-Green" {
+        if stylus-deepdark-style=="Catppuccin-Mocha-Green" {
             --color-success-medium: #A6E3A1;
             --color-text-link: #A6E3A1;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Lavender" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Lavender" {
             --color-success-medium: #B4BEFE;
             --color-text-link: #B4BEFE;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Flamingo" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Flamingo" {
             --color-success-medium: #F2CDCD;
             --color-text-link: #F2CDCD;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Mauve" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Mauve" {
             --color-success-medium: #CBA6F7;
             --color-text-link: #CBA6F7;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Pink" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Pink" {
             --color-success-medium: #F5C2E7;
             --color-text-link: #F5C2E7;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Red" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha -Red" {
             --color-success-medium: #F38BA8;
             --color-text-link: #F38BA8;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Peach" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Peach" {
             --color-success-medium: #FAB387;
             --color-text-link: #FAB387;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Yellow" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Yellow" {
             --color-success-medium: #F9E2AF;
             --color-text-link: #F9E2AF;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Teal" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Teal" {
             --color-success-medium: #94E2D5;
             --color-text-link: #94E2D5;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Blue" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Blue" {
             --color-success-medium: #89B4FA;   
             --color-text-link: #89B4FA;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Sky" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Sky" {
             --color-success-medium: #89DCEB;
             --color-text-link: #89DCEB;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Maroon" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Maroon" {
             --color-success-medium: #EBA0AC;            
             --color-text-link: #EBA0AC;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Sapphire" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Sapphire" {
             --color-success-medium: #74C7EC;       
             --color-text-link: #74C7EC;
         }
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Rosewater" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Rosewater" {
             --color-success-medium: #F5E0DC; 
             --color-text-link: #F5E0DC;                       
         }
