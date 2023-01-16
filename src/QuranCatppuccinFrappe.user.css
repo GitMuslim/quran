@@ -93,10 +93,10 @@
             --color-text-link: #F5E0DC;                     
         }
             --color-primary-medium: #C6D0F5;
-            --color-success-faded: #303446;
+            --color-success-faded: #292C3C;
             --color-text-default: #C6D0F5;
             --color-text-faded: #949CBB;
-            --color-background-default: #303446;
+            --color-background-default: #292C3C;
             --color-borders-hairline: #2f2f46;
     }
           
@@ -157,7 +157,7 @@
             --color-borders-hairline: #F5E0DC;       
             --color-success-medium: #F5E0DC;
         }
-            --color-background-elevated: #303446;
+            --color-background-elevated: #292C3C;
             --color-text-inverse: #C6D0F5;
             --color-text-default: #C6D0F5;
             --color-text-faded: #949CBB;
