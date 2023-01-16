@@ -38,45 +38,59 @@
     :root {
         if stylus-deepdark-style=="Catppuccin-Frappe-Green" {
             --color-success-medium: #A6E3A1;
+            --color-text-link: #A6E3A1;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Lavender" {
             --color-success-medium: #B4BEFE;
+            --color-text-link: #B4BEFE;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Flamingo" {
             --color-success-medium: #F2CDCD;
+            --color-text-link: #F2CDCD;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Mauve" {
             --color-success-medium: #CBA6F7;
+            --color-text-link: #CBA6F7;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Pink" {
             --color-success-medium: #F5C2E7;
+            --color-text-link: #F5C2E7;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Red" {
             --color-success-medium: #F38BA8;
+            --color-text-link: #F38BA8;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Peach" {
             --color-success-medium: #FAB387;
+            --color-text-link: #FAB387;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Yellow" {
             --color-success-medium: #F9E2AF;
+            --color-text-link: #F9E2AF;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Teal" {
             --color-success-medium: #94E2D5;
+            --color-text-link: #94E2D5;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Blue" {
-            --color-success-medium: #89B4FA;            
+            --color-success-medium: #89B4FA;   
+            --color-text-link: #89B4FA;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Sky" {
             --color-success-medium: #89DCEB;
+            --color-text-link: #89DCEB;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Maroon" {
             --color-success-medium: #EBA0AC;            
+            --color-text-link: #EBA0AC;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Sapphire" {
-            --color-success-medium: #74C7EC;            
+            --color-success-medium: #74C7EC;       
+            --color-text-link: #74C7EC;
         }
         else if stylus-deepdark-style=="Catppuccin-Frappe-Rosewater" {
-            --color-success-medium: #F5E0DC;                        
+            --color-success-medium: #F5E0DC; 
+            --color-text-link: #F5E0DC;                     
         }
             --color-primary-medium: #C6D0F5;
             --color-success-faded: #292C3C;
