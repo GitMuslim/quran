@@ -1,0 +1,94 @@
+/* ==UserStyle==
+@name Quran Catppuccin-Frappe
+@namespace github.com/mustafakhalaf-git/quran
+@homepageURL https://github.com/mustafakhalaf-git/quran
+@version 1.3.7
+@updateURL https://github.com/mustafakhalaf-git/quran/raw/main/src/QuranCatppuccinFrappe.user.css
+@description Soothing pastel theme for Quran
+@author mustafakhalaf-git
+@license GNU-V3.0
+
+@preprocessor stylus
+
+@var select stylus-deepdark-style "Preset themes" [
+	"Catppuccin-Frappe-Green",
+	"Catppuccin-Frappe-Flamingo",
+	"Catppuccin-Frappe-Mauve",
+	"Catppuccin-Frappe-Pink",
+	"Catppuccin-Frappe-Lavender",
+	"Catppuccin-Frappe-Red",
+	"Catppuccin-Frappe-Peach",
+	"Catppuccin-Frappe-Yellow",
+	"Catppuccin-Frappe-Teal",
+	"Catppuccin-Frappe-Blue",
+	"Catppuccin-Frappe-Sky",
+    "Catppuccin-Frappe-Maroon",
+    "Catppuccin-Frappe-Sapphire",
+    "Catppuccin-Frappe-Rosewater"
+]
+
+@var checkbox join-color "Use dark join button" 1
+@var checkbox subscribe-color "Use dark subscribe button" 0
+
+@var text scrollbar_width "Scrollbar width" 6px
+@var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
+==/UserStyle== */
+
+@-moz-document domain("quran.com") {
+    :root {
+        if stylus-deepdark-style=="Catppuccin-Frappe-Green" {
+            --color-success-medium: #A6E3A1;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Lavender" {
+            --color-success-medium: #B4BEFE;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Flamingo" {
+            --color-success-medium: #F2CDCD;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Mauve" {
+            --color-success-medium: #CBA6F7;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Pink" {
+            --color-success-medium: #F5C2E7;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Red" {
+            --color-success-medium: #F38BA8;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Peach" {
+            --color-success-medium: #FAB387;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Yellow" {
+            --color-success-medium: #F9E2AF;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Teal" {
+            --color-success-medium: #94E2D5;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Blue" {
+            --color-success-medium: #89B4FA;            
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Sky" {
+            --color-success-medium: #89DCEB;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Maroon" {
+            --color-success-medium: #EBA0AC;            
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Sapphire" {
+            --color-success-medium: #74C7EC;            
+        }
+        else if stylus-deepdark-style=="Catppuccin-Frappe-Rosewater" {
+            --color-success-medium: #F5E0DC;                        
+        }
+            --color-primary-medium: #C6D0F5;
+            --color-success-faded: #292C3C;
+            --color-text-default: #C6D0F5;
+            --color-text-faded: #949CBB;
+            --color-background-default: #292C3C;
+            --color-borders-hairline: #2f2f46;
+    }
+}
+
+:root {
+  --shade-7: #2f2f46;
+  --shade-8: #303446;
+  --shade-9: #2f2f46;
+}
