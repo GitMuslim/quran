@@ -105,7 +105,7 @@
 
 [data-theme="light"] {
     --color-background-elevated: #E6E9EF;
-    --color-text-inverse: #4C4F69;
+    --color-text-inverse: #E6E9EF;
     --color-text-default: #4C4F69;
     --color-text-faded: #7C7F93;
 }
