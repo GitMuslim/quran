@@ -12,26 +12,26 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/preview_new.png"/>
+	<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/preview.png"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/latte_new.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/frappe_new.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/macchiato_new.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/mocha_new.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/mocha.png"/>
 </details>
 
 ## Usage
