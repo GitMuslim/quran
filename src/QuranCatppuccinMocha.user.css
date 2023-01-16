@@ -93,10 +93,10 @@
             --color-text-link: #F5E0DC;                       
         }
             --color-primary-medium: #CDD6F4;
-            --color-success-faded: #1E1E2E;
+            --color-success-faded: #181825;
             --color-text-default: #CDD6F4;
             --color-text-faded: #9399B2;
-            --color-background-default: #1E1E2E;
+            --color-background-default: #181825;
             --color-borders-hairline: #2f2f46;
     }
       
@@ -157,7 +157,7 @@
             --color-borders-hairline: #F5E0DC;       
             --color-success-medium: #F5E0DC;
         }
-            --color-background-elevated: #1E1E2E;
+            --color-background-elevated: #181825;
             --color-text-inverse: #CDD6F4;
             --color-text-default: #CDD6F4;
             --color-text-faded: #9399B2;
