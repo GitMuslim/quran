@@ -93,16 +93,18 @@
             --color-text-link: #F5E0DC;                     
         }
             --color-primary-medium: #4C4F69;
-            --color-success-faded: #E6E9EF;
+            //--color-success-faded: #E6E9EF;
+            --color-success-faded: #5a5c69;
             --color-text-default: #4C4F69;
             --color-text-faded: #7C7F93;
             --color-background-default: #E6E9EF;
-            --color-borders-hairline: #2f2f46;
+            --color-borders-hairline: #fff;
+            --color-background-lighten: #fff;
     }
 }
 
 :root {
-  --shade-7: #2f2f46;
+  --shade-7: #ebeef0;
   --shade-8: #EFF1F5;
-  --shade-9: #2f2f46;
+  --shade-9: #ebeef0;
 }
