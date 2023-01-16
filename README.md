@@ -41,7 +41,7 @@
   - [🌻 Catppuccin Latte](https://github.com/catppuccin/Quran/raw/main/src/QuranCatppuccinLatte.user.css)
   - [🪴 Catppuccin Frappe](https://github.com/catppuccin/Quran/raw/main/src/QuranCatppuccinFrappe.user.css)
   - [🌺 Catppuccin Macchiato](https://github.com/catppuccin/Quran/raw/main/src/QuranCatppuccinMacchiato.user.css)
-  - [🌿 Catppuccin Mocha](https://github.com/catppuccin/Quran/raw/main/src/QuranCatppuccinMocha.user.css)
+  - [🌿 Catppuccin Mocha]([https://github.com/mustafakhalaf-git/Quran/raw/main/src/QuranCatppuccinMocha.user.css]
 3. Choose Your accent color by Setting Theme in Stylus Options
 <details>
 <summary>
