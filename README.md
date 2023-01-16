@@ -48,7 +48,7 @@
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/catppuccin)
+- [mustafakhalaf-git](https://github.com/mustafakhalaf-git)
 
 &nbsp;
 
