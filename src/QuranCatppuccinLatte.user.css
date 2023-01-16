@@ -101,13 +101,69 @@
             --color-borders-hairline: #fff;
             --color-background-lighten: #fff;
     }
-}
-
-[data-theme="light"] {
-    --color-background-elevated: #E6E9EF;
-    --color-text-inverse: #E6E9EF;
-    --color-text-default: #4C4F69;
-    --color-text-faded: #7C7F93;
+        
+    [data-theme="light"] {
+        if stylus-deepdark-style=="Catppuccin-Latte-Green" {
+            --color-borders-hairline: #A6E3A1;
+            --color-success-medium: #A6E3A1;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Lavender" {
+            --color-borders-hairline: #B4BEFE;
+            --color-success-medium: #B4BEFE;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Flamingo" {
+            --color-borders-hairline: #F2CDCD;
+            --color-success-medium: #F2CDCD;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Mauve" {
+            --color-borders-hairline: #CBA6F7;
+            --color-success-medium: #CBA6F7;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Pink" {
+            --color-borders-hairline: #F5C2E7;
+            --color-success-medium: #F5C2E7;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Red" {
+            --color-borders-hairline: #F38BA8;
+            --color-success-medium: #F38BA8;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Peach" {
+            --color-borders-hairline: #FAB387;
+            --color-success-medium: #FAB387;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Yellow" {
+            --color-borders-hairline: #F9E2AF;
+            --color-success-medium: #F9E2AF;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Teal" {
+            --color-borders-hairline: #94E2D5;
+            --color-success-medium: #94E2D5;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Blue" {
+            --color-borders-hairline: #89B4FA;
+            --color-success-medium: #89B4FA;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Sky" {
+            --color-borders-hairline: #89DCEB;
+            --color-success-medium: #89DCEB;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Maroon" {
+            --color-borders-hairline: #EBA0AC;
+            --color-success-medium: #EBA0AC;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Sapphire" {
+            --color-borders-hairline: #74C7EC;
+            --color-success-medium: #74C7EC;
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Rosewater" {
+            --color-borders-hairline: #F5E0DC;       
+            --color-success-medium: #F5E0DC;
+        }
+            --color-background-elevated: #1E2030;
+            --color-text-inverse: #CAD3F5;
+            --color-text-default: #CAD3F5;
+            --color-text-faded: #939AB7;
+    }
 }
 
 :root {
