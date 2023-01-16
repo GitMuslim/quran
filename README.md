@@ -44,11 +44,6 @@
   - [🌿 Catppuccin Mocha](https://github.com/catppuccin/Quran/raw/main/src/QuranCatppuccinMocha.user.css)
 3. Choose Your accent color by Setting Theme in Stylus Options
 
-## 🙋 FAQ (optional)
-
--	Q: **_"Where can I find the doc?"_**\
-	A: Run `:help theme`
-
 ## 💝 Thanks to
 
 - [mustafakhalaf-git](https://github.com/mustafakhalaf-git)
