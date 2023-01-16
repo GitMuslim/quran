@@ -97,7 +97,7 @@
             --color-success-faded: #5a5c69;
             --color-text-default: #4C4F69;
             --color-text-faded: #7C7F93;
-            --color-background-default: #E6E9EF;
+            --color-background-default: #EFF1F5;
             --color-borders-hairline: #fff;
             --color-background-lighten: #fff;
     }
@@ -159,8 +159,8 @@
             --color-borders-hairline: #F5E0DC;       
             --color-success-medium: #F5E0DC;
         }
-            --color-background-elevated: #E6E9EF;
-            --color-text-inverse: #E6E9EF;
+            --color-background-elevated: #EFF1F5;
+            --color-text-inverse: #EFF1F5;
             --color-text-default: #4C4F69;
             --color-text-faded: #7C7F93;
     }
