@@ -103,6 +103,13 @@
     }
 }
 
+[data-theme="light"] {
+    --color-background-elevated: #E6E9EF;
+    --color-text-inverse: #4C4F69;
+    --color-text-default: #4C4F69;
+    --color-text-faded: #7C7F93;
+}
+
 :root {
   --shade-7: #ebeef0;
   --shade-8: #EFF1F5;
