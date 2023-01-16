@@ -53,7 +53,7 @@
 
 ## 💝 Thanks to
 
-- [mustafakhalaf-git](https://github.com/mustafakhalaf-git)
+- [mustafakhalaf-git](https://github.com/mustafakhalaf-git), (Inspired by  [Catppuccin for YT](https://github.com/catppuccin/youtube/))
 
 &nbsp;
 
