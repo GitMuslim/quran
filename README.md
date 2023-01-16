@@ -39,7 +39,7 @@
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 2. Then install with Stylus (click on the link):
   - [🌻 Catppuccin Latte](https://github.com/catppuccin/Quran/raw/main/src/QuranCatppuccinLatte.user.css)
-  - [🪴 Catppuccin Frappe](https://github.com/catppuccin/mustafakhalaf-git/raw/main/src/QuranCatppuccinFrappe.user.css)
+  - [🪴 Catppuccin Frappe](https://github.com/mustafakhalaf-git/Quran/raw/main/src/QuranCatppuccinFrappe.user.css)
   - [🌺 Catppuccin Macchiato](https://github.com/mustafakhalaf-git/Quran/raw/main/src/QuranCatppuccinMacchiato.user.css)
   - [🌿 Catppuccin Mocha](https://github.com/mustafakhalaf-git/Quran/raw/main/src/QuranCatppuccinMocha.user.css)
 3. Choose Your accent color by Setting Theme in Stylus Options
