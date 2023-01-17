@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
+    بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
 		
     In the Name of Allah—the Most Compassionate, Most Merciful.
   
