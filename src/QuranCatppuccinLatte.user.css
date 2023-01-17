@@ -163,6 +163,7 @@
             --color-text-inverse: #E6E9EF;
             --color-text-default: #4C4F69;
             --color-text-faded: #7C7F93;
+            --color-background-lighten: hsl(221.2, 17.4%, 82%);
     }
   
     .HomePageHero_backgroundImage__iQe4N {
