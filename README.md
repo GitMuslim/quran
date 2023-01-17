@@ -12,6 +12,7 @@
 </p>
 
 <p align="center">
+  بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
 	<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/preview.png"/>
 </p>
 
