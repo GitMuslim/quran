@@ -1,6 +1,5 @@
 <h3 align="center">
   بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ   
-In the Name of Allah—the Most Compassionate, Most Merciful.
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/><br/>
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/><br/>
 	<img src="https://raw.githubusercontent.com/mustafakhalaf-git/Quran/main/assets/quran.png" width="100" alt="Logo"/><br/>
