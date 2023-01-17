@@ -13,8 +13,9 @@
 
 <p align="center">
   بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
-		In the Name of Allah—the Most Compassionate, Most Merciful.
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+		
+  In the Name of Allah—the Most Compassionate, Most Merciful.
+  
   
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/preview.png"/>
 </p>
