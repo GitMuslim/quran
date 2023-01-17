@@ -7,8 +7,8 @@
 
 <p align="center">
   
-        بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ   
-    In the Name of Allah—the Most Compassionate, Most Merciful.
+بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ   
+In the Name of Allah—the Most Compassionate, Most Merciful.
  
     <a href="https://github.com/mustafakhalaf-git/Quran/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/mustafakhalaf-git/Quran?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
     <a href="https://github.com/mustafakhalaf-git/Quran/issues"><img src="https://img.shields.io/github/issues/mustafakhalaf-git/Quran?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
