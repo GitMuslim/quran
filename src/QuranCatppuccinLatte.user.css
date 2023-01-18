@@ -2,7 +2,7 @@
 @name Quran Catppuccin-Latte
 @namespace github.com/mustafakhalaf-git/quran
 @homepageURL https://github.com/mustafakhalaf-git/quran
-@version 1.3.7
+@version 1.0.0
 @updateURL https://github.com/mustafakhalaf-git/quran/raw/main/src/QuranCatppuccinLatte.user.css
 @description Soothing pastel theme for Quran
 @author mustafakhalaf-git
@@ -37,60 +37,60 @@
 @-moz-document domain("quran.com") {
     :root {
         if stylus-deepdark-style=="Catppuccin-Latte-Green" {
-            --color-success-medium: #A6E3A1;
-            --color-text-link: #A6E3A1;
+            --color-success-medium: #40a02b;
+            --color-text-link: #40a02b;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Lavender" {
-            --color-success-medium: #B4BEFE;
-            --color-text-link: #B4BEFE;
+            --color-success-medium: #7287fd;
+            --color-text-link: #7287fd;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Flamingo" {
-            --color-success-medium: #F2CDCD;
-            --color-text-link: #F2CDCD;
+            --color-success-medium: #dd7878;
+            --color-text-link: #dd7878;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Mauve" {
-            --color-success-medium: #CBA6F7;
-            --color-text-link: #CBA6F7;
+            --color-success-medium: #8839ef;
+            --color-text-link: #8839ef;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Pink" {
-            --color-success-medium: #F5C2E7;
-            --color-text-link: #F5C2E7;
+            --color-success-medium: #ea76cb;
+            --color-text-link: #ea76cb;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Red" {
-            --color-success-medium: #F38BA8;
-            --color-text-link: #F38BA8;
+            --color-success-medium: #d20f39;
+            --color-text-link: #d20f39;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Peach" {
-            --color-success-medium: #FAB387;
-            --color-text-link: #FAB387;
+            --color-success-medium: #fe640b;
+            --color-text-link: #fe640b;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Yellow" {
-            --color-success-medium: #F9E2AF;
-            --color-text-link: #F9E2AF;
+            --color-success-medium: #df8e1d;
+            --color-text-link: #df8e1d;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Teal" {
-            --color-success-medium: #94E2D5;
-            --color-text-link: #94E2D5;
+            --color-success-medium: #179299;
+            --color-text-link: #179299;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Blue" {
-            --color-success-medium: #89B4FA;   
-            --color-text-link: #89B4FA;
+            --color-success-medium: #1e66f5;   
+            --color-text-link: #1e66f5;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Sky" {
-            --color-success-medium: #89DCEB;
-            --color-text-link: #89DCEB;
+            --color-success-medium: #04a5e5;
+            --color-text-link: #04a5e5;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Maroon" {
-            --color-success-medium: #EBA0AC;            
-            --color-text-link: #EBA0AC;
+            --color-success-medium: #e64553;            
+            --color-text-link: #e64553;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Sapphire" {
-            --color-success-medium: #74C7EC;       
-            --color-text-link: #74C7EC;
+            --color-success-medium: #209fb5;       
+            --color-text-link: #209fb5;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Rosewater" {
-            --color-success-medium: #F5E0DC; 
-            --color-text-link: #F5E0DC;                     
+            --color-success-medium: #dc8a78; 
+            --color-text-link: #dc8a78;                     
         }
             --color-primary-medium: #4C4F69;
             //--color-success-faded: #E6E9EF;
@@ -104,60 +104,60 @@
         
     [data-theme="light"] {
         if stylus-deepdark-style=="Catppuccin-Latte-Green" {
-            --color-borders-hairline: #A6E3A1;
-            --color-success-medium: #A6E3A1;
+            --color-borders-hairline: #40a02b;
+            --color-success-medium: #40a02b;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Lavender" {
-            --color-borders-hairline: #B4BEFE;
-            --color-success-medium: #B4BEFE;
+            --color-borders-hairline: #7287fd;
+            --color-success-medium: #7287fd;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Flamingo" {
-            --color-borders-hairline: #F2CDCD;
-            --color-success-medium: #F2CDCD;
+            --color-borders-hairline: #dd7878;
+            --color-success-medium: #dd7878;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Mauve" {
-            --color-borders-hairline: #CBA6F7;
-            --color-success-medium: #CBA6F7;
+            --color-borders-hairline: #8839ef;
+            --color-success-medium: #8839ef;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Pink" {
-            --color-borders-hairline: #F5C2E7;
-            --color-success-medium: #F5C2E7;
+            --color-borders-hairline: #ea76cb;
+            --color-success-medium: #ea76cb;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Red" {
-            --color-borders-hairline: #F38BA8;
-            --color-success-medium: #F38BA8;
+            --color-borders-hairline: #d20f39;
+            --color-success-medium: #d20f39;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Peach" {
-            --color-borders-hairline: #FAB387;
-            --color-success-medium: #FAB387;
+            --color-borders-hairline: #fe640b;
+            --color-success-medium: #fe640b;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Yellow" {
-            --color-borders-hairline: #F9E2AF;
-            --color-success-medium: #F9E2AF;
+            --color-borders-hairline: #df8e1d;
+            --color-success-medium: #df8e1d;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Teal" {
-            --color-borders-hairline: #94E2D5;
-            --color-success-medium: #94E2D5;
+            --color-borders-hairline: #179299;
+            --color-success-medium: #179299;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Blue" {
-            --color-borders-hairline: #89B4FA;
-            --color-success-medium: #89B4FA;
+            --color-borders-hairline: #1e66f5;
+            --color-success-medium: #1e66f5;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Sky" {
-            --color-borders-hairline: #89DCEB;
-            --color-success-medium: #89DCEB;
+            --color-borders-hairline: #04a5e5;
+            --color-success-medium: #04a5e5;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Maroon" {
-            --color-borders-hairline: #EBA0AC;
-            --color-success-medium: #EBA0AC;
+            --color-borders-hairline: #e64553;
+            --color-success-medium: #e64553;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Sapphire" {
-            --color-borders-hairline: #74C7EC;
-            --color-success-medium: #74C7EC;
+            --color-borders-hairline: #209fb5;
+            --color-success-medium: #209fb5;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Rosewater" {
-            --color-borders-hairline: #F5E0DC;       
-            --color-success-medium: #F5E0DC;
+            --color-borders-hairline: #dc8a78;       
+            --color-success-medium: #dc8a78;
         }
             --color-background-elevated: #E6E9EF;
             --color-text-inverse: #E6E9EF;
@@ -168,46 +168,46 @@
   
     .HomePageHero_backgroundImage__iQe4N {
         if stylus-deepdark-style=="Catppuccin-Latte-Green" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/green.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_green.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Lavender" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/lavender.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_lavender.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Flamingo" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flamingo.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_flamingo.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Mauve" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mauve.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_mauve.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Pink" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/pink.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_pink.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Red" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/red.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_red.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Peach" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/peach.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_peach.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Yellow" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/yellow.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_yellow.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Teal" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/teal.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_teal.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Blue" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/blue.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_blue.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Sky" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/sky.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_sky.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Maroon" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/maroon.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_maroon.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Sapphire" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/sapphire.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_sapphire.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Rosewater" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/rosewater.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_rosewater.png);
         }
     }
 }
