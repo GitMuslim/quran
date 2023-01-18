@@ -150,8 +150,8 @@
             --color-success-medium: #ee99a0;
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Sapphire" {
-            --color-borders-hairline: ## 7dc4e4;
-            --color-success-medium: ## 7dc4e4;
+            --color-borders-hairline: #7dc4e4;
+            --color-success-medium: #7dc4e4;
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Rosewater" {
             --color-borders-hairline: #f4dbd6;       
