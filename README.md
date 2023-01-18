@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/preview_new.png"/>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/preview.png"/>
 </p>
 
 ## Previews
@@ -52,7 +52,7 @@
 4. Make sure your base quran theme is set to auto mode
 </summary>
 
-![Help image](./assets/set-to-auto.png)
+![Help image](./assets/set-theme-to-auto.png)
 </details>
 
 ## 💝 Thanks to
