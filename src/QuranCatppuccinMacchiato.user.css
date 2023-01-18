@@ -166,46 +166,46 @@
     
     .HomePageHero_backgroundImage__iQe4N {
         if stylus-deepdark-style=="Catppuccin-Macchiato-Green" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/green.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_green.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Lavender" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/lavender.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_lavender.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Flamingo" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flamingo.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_flamingo.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Mauve" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mauve.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_mauve.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Pink" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/pink.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_pink.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Red" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/red.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_red.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Peach" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/peach.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_peach.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Yellow" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/yellow.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_yellow.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Teal" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/teal.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_teal.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Blue" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/blue.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_blue.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Sky" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/sky.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_sky.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Maroon" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/maroon.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_maroon.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Sapphire" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/sapphire.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_sapphire.png.png);
         }
         else if stylus-deepdark-style=="Catppuccin-Macchiato-Rosewater" {
-            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/rosewater.png);
+            background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_rosewater.png);
         }
     }
 }

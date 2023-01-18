@@ -56,7 +56,7 @@
             --color-success-medium: #F5C2E7;
             --color-text-link: #F5C2E7;
         }
-        else if stylus-deepdark-style=="Catppuccin-Mocha -Red" {
+        else if stylus-deepdark-style=="Catppuccin-Mocha-Red" {
             --color-success-medium: #F38BA8;
             --color-text-link: #F38BA8;
         }
