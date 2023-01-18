@@ -52,7 +52,7 @@
 4. Make sure your base quran theme is set to auto mode
 </summary>
 
-![Help image](./assets/set-to-a.uto.png)
+![Help image](./assets/set-to-auto.png)
 </details>
 
 ## 💝 Thanks to
