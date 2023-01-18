@@ -164,7 +164,7 @@
             --color-background-lighten: hsl(240, 26.8%, 8%);
     }
   
-  .HomePageHero_backgroundImage__iQe4N {
+    .HomePageHero_backgroundImage__iQe4N {
         if stylus-deepdark-style=="Catppuccin-Mocha-Green" {
             background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_green.png);
         }
