@@ -26,12 +26,6 @@
     "Catppuccin-Mocha-Sapphire",
     "Catppuccin-Mocha-Rosewater"
 ]
-
-@var checkbox join-color "Use dark join button" 1
-@var checkbox subscribe-color "Use dark subscribe button" 0
-
-@var text scrollbar_width "Scrollbar width" 6px
-@var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
 ==/UserStyle== */
 
 @-moz-document domain("quran.com") {
