@@ -2,7 +2,7 @@
 @name Quran Catppuccin-Macchiato
 @namespace github.com/mustafakhalaf-git/quran
 @homepageURL https://github.com/mustafakhalaf-git/quran
-@version 1.0.0
+@version 1.0.1
 @updateURL https://github.com/mustafakhalaf-git/quran/raw/main/src/QuranCatppuccinMacchiato.user.css
 @description Soothing pastel theme for Quran
 @author mustafakhalaf-git
@@ -26,12 +26,6 @@
     "Catppuccin-Macchiato-Sapphire",
     "Catppuccin-Macchiato-Rosewater"
 ]
-
-@var checkbox join-color "Use dark join button" 1
-@var checkbox subscribe-color "Use dark subscribe button" 0
-
-@var text scrollbar_width "Scrollbar width" 6px
-@var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
 ==/UserStyle== */
 
 @-moz-document domain("quran.com") {
