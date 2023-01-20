@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/preview_new.webp"/>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/preview.webp"/>
 </p>
 
 ## Previews
