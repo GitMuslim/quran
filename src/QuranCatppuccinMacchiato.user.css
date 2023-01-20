@@ -206,7 +206,7 @@
 
 @media(prefers-color-scheme:dark) {
  .HomePageHero_backgroundImage__iQe4N {
-  filter:saturate(2.15) brightness(1) contrast()
+  filter:saturate(2.075) brightness(1) contrast()
  }
 }
 
