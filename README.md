@@ -19,7 +19,7 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/latte.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/latte_.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
