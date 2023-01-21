@@ -28,7 +28,7 @@
 ]
 ==/UserStyle== */
 
-@-moz-document url("https://quran.com") {
+@-moz-document regexp("https://quran.com") {
     :root {
         if stylus-deepdark-style=="Catppuccin-Macchiato-Green" {
             --color-success-medium: #a6da95;
