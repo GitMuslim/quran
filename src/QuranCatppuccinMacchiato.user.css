@@ -28,7 +28,12 @@
 ]
 ==/UserStyle== */
 
-@-moz-document regexp("https://quran.com") {
+@-moz-document domain("https://quran.com") {
+    :root {
+        --shade-7: #2f2f46;
+        --shade-8: #24273A;
+        --shade-9: #2f2f46;
+    }
     :root {
         if stylus-deepdark-style=="Catppuccin-Macchiato-Green" {
             --color-success-medium: #a6da95;
@@ -202,16 +207,11 @@
             background-image:url(https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_rosewater.png);
         }
     }
+
+    @media(prefers-color-scheme:dark) {
+        .HomePageHero_backgroundImage__iQe4N {
+            filter:saturate(2.075) brightness(1) contrast()
+        }
+    }
 }
 
-@media(prefers-color-scheme:dark) {
- .HomePageHero_backgroundImage__iQe4N {
-  filter:saturate(2.075) brightness(1) contrast()
- }
-}
-
-:root {
-  --shade-7: #2f2f46;
-  --shade-8: #24273A;
-  --shade-9: #2f2f46;
-}
