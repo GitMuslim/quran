@@ -28,12 +28,7 @@
 ]
 ==/UserStyle== */
 
-@-moz-document domain("https://quran.com") {
-    :root {
-        --shade-7: #2f2f46;
-        --shade-8: #24273A;
-        --shade-9: #2f2f46;
-    }
+@-moz-document domain("quran.com") {
     :root {
         if stylus-deepdark-style=="Catppuccin-Macchiato-Green" {
             --color-success-medium: #a6da95;
@@ -209,15 +204,15 @@
     }
 
     @media(prefers-color-scheme:dark) {
-      .HomePageHero_backgroundImage__iQe4N {
-        filter:saturate(2.075) brightness(1) contrast()
-      }
+        .HomePageHero_backgroundImage__iQe4N {
+            filter:saturate(2.075) brightness(1) contrast()
+        }
     }
-  
+    
     :root {
-      --shade-7: #2f2f46;
-      --shade-8: #303446;
-      --shade-9: #2f2f46;
+        --shade-7: #2f2f46;
+        --shade-8: #24273A;
+        --shade-9: #2f2f46;
     }
 }
 
