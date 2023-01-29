@@ -170,6 +170,7 @@
         --color-text-default: var(--ctp-text);
         --color-text-faded: var(--ctp-subtext0);
         --color-background-lighten: var(--ctp-crust);
+        --color-success-deep: var(--ctp-text);
     }
     [data-theme="light"] {
         --color-borders-hairline: var(--color);
