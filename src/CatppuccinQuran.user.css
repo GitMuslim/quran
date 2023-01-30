@@ -2,7 +2,7 @@
 @name           Quran Catppuccin
 @namespace      github.com/mustafakhalaf-git/quran
 @homepageURL    https://github.com/mustafakhalaf-git/quran
-@version        1.0.3
+@version        1.0.4
 @description    Soothing pastel theme for Quran.com
 @author         mustafakhalaf-git
 @preprocessor   stylus
@@ -12,12 +12,14 @@
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
 @var select theme_color "Color" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Sky", "Sapphire", "Blue", "Lavender"]
 @var select base "Base Color" ["Dark", "Light"]
+@var checkbox include_ayah_back "Color Ayah Background" 0
+@var checkbox include_surah_boxes "Color Surah Boxes" 0
+@var checkbox include_boxes "Color Boxes" 0
 ==/UserStyle== */
 
 @-moz-document domain("quran.com") {
     colourscheme(flavour) {
         if (flavour=="Latte") {
-            --theme: "latte";
             --ctp-rosewater: #dc8a78;
             --ctp-flamingo: #dd7878;
             --ctp-pink: #ea76cb;
@@ -32,6 +34,20 @@
             --ctp-sapphire: #209fb5;
             --ctp-blue: #1e66f5;
             --ctp-lavender: #7287fd;
+            --ctp-rosewatera: rgba(220, 138, 120, 0.175);
+            --ctp-flamingoa: rgba(221, 120, 120, 0.175);
+            --ctp-pinka: rgba(234, 118, 203, 0.175);
+            --ctp-mauvea: rgba(136, 57, 239, 0.175);
+            --ctp-reda: rgba(210, 15, 57, 0.175);
+            --ctp-maroona: rgba(230, 69, 83, 0.175);
+            --ctp-peacha: rgba(254, 100, 11, 0.175);
+            --ctp-yellowa: rgba(223, 142, 29, 0.175);
+            --ctp-greena: rgba(64, 160, 43, 0.175);
+            --ctp-teala: rgba(23, 146, 153, 0.175);
+            --ctp-skya: rgba(4, 165, 229, 0.175);
+            --ctp-sapphirea: rgba(32, 159, 181, 0.175);
+            --ctp-bluea: rgba(30, 102, 245, 0.175);
+            --ctp-lavendera: rgba(114, 135, 253, 0.175);
             --ctp-text: #4c4f69;
             --ctp-subtext1: #5c5f77;
             --ctp-subtext0: #6c6f85;
@@ -47,7 +63,6 @@
             --ctp-shadow: #dbdfef;
         }
         if (flavour=="Frappe") {
-            --theme: "frappe";
             --ctp-rosewater: #f2d5cf;
             --ctp-flamingo: #eebebe;
             --ctp-pink: #f4b8e4;
@@ -62,6 +77,20 @@
             --ctp-sapphire: #85c1dc;
             --ctp-blue: #8caaee;
             --ctp-lavender: #babbf1;
+            --ctp-rosewatera: rgba(242, 213, 207, 0.175);
+            --ctp-flamingoa: rgba(238, 190, 190, 0.175);
+            --ctp-pinka: rgba(244, 184, 228, 0.175);
+            --ctp-mauvea: rgba(202, 158, 230, 0.175);
+            --ctp-reda: rgba(231, 130, 132, 0.175);
+            --ctp-maroona: rgba(234, 153, 156, 0.175);
+            --ctp-peacha: rgba(239, 159, 118, 0.175);
+            --ctp-yellowa: rgba(229, 200, 144, 0.175);
+            --ctp-greena: rgba(166, 209, 137, 0.175);
+            --ctp-teala: rgba(129, 200, 190, 0.175);
+            --ctp-skya: rgba(153, 209, 219, 0.175);
+            --ctp-sapphirea: rgba(133, 193, 220, 0.175);
+            --ctp-bluea: rgba(140, 170, 238, 0.175);
+            --ctp-lavendera: rgba(186, 187, 241, 0.175);
             --ctp-text: #c6d0f5;
             --ctp-subtext1: #b5bfe2;
             --ctp-subtext0: #a5adce;
@@ -77,7 +106,6 @@
             --ctp-shadow: #010409;
         }
         if (flavour=="Macchiato") {
-            --theme: "macchiato";
             --ctp-rosewater: #f4dbd6;
             --ctp-flamingo: #f0c6c6;
             --ctp-pink: #f5bde6;
@@ -92,6 +120,20 @@
             --ctp-sapphire: #7dc4e4;
             --ctp-blue: #8aadf4;
             --ctp-lavender: #b7bdf8;
+            --ctp-rosewatera: rgba(244, 219, 214, 0.175);
+            --ctp-flamingoa: rgba(240, 198, 198, 0.175);
+            --ctp-pinka: rgba(245, 189, 230, 0.175);
+            --ctp-mauvea: rgba(198, 160, 246, 0.175);
+            --ctp-reda: rgba(237, 135, 150, 0.175);
+            --ctp-maroona: rgba(238, 153, 160, 0.175);
+            --ctp-peacha: rgba(245, 169, 127, 0.175);
+            --ctp-yellowa: rgba(238, 212, 159, 0.175);
+            --ctp-greena: rgba(166, 218, 149, 0.175);
+            --ctp-teala: rgba(139, 213, 202, 0.175);
+            --ctp-skya: rgba(145, 215, 227, 0.175);
+            --ctp-sapphirea: rgba(125, 196, 228, 0.175);
+            --ctp-bluea: rgba(138, 173, 244, 0.175);
+            --ctp-lavendera: rgba(183, 189, 248, 0.175);
             --ctp-text: #cad3f5;
             --ctp-subtext1: #b8c0e0;
             --ctp-subtext0: #a5adcb;
@@ -107,7 +149,6 @@
             --ctp-shadow: #010409;
         }
         if (flavour=="Mocha") {
-            --theme: "mocha";
             --ctp-rosewater: #f5e0dc;
             --ctp-flamingo: #f2cdcd;
             --ctp-pink: #f5c2e7;
@@ -120,8 +161,22 @@
             --ctp-teal: #94e2d5;
             --ctp-sky: #89dceb;
             --ctp-sapphire: #74c7ec;
-            --ctp-lavender: #b4befe;
             --ctp-blue: #89b4fa;
+            --ctp-lavender: #b4befe;
+            --ctp-rosewatera: rgba(245, 224, 220, 0.175);
+            --ctp-flamingoa: rgba(242, 205, 205, 0.175);
+            --ctp-pinka: rgba(245, 194, 231, 0.175);
+            --ctp-mauvea: rgba(203, 166, 247, 0.175);
+            --ctp-reda: rgba(243, 139, 168, 0.175);
+            --ctp-maroona: rgba(235, 160, 172, 0.175);
+            --ctp-peacha: rgba(250, 179, 135, 0.175);
+            --ctp-yellowa: rgba(249, 226, 175, 0.175);
+            --ctp-greena: rgba(166, 227, 161, 0.175);
+            --ctp-teala: rgba(148, 226, 213, 0.175);
+            --ctp-skya: rgba(137, 220, 235, 0.175);
+            --ctp-sapphirea: rgba(116, 199, 236, 0.175);
+            --ctp-bluea: rgba(137, 180, 250, 0.175);
+            --ctp-lavendera: rgba(180, 190, 254, 0.175);
             --ctp-text: #cdd6f4;
             --ctp-subtext1: #bac2de;
             --ctp-subtext0: #a6adc8;
@@ -142,20 +197,20 @@
         if (theme=="Frappe")          { colourscheme(Frappe) }
         if (theme=="Macchiato")       { colourscheme(Macchiato) }
         if (theme=="Mocha")           { colourscheme(Mocha) }
-        if (theme_color=="Rosewater") { --color: var(--ctp-rosewater) }
-        if (theme_color=="Flamingo")  { --color: var(--ctp-flamingo) }
-        if (theme_color=="Pink")      { --color: var(--ctp-pink) }
-        if (theme_color=="Mauve")     { --color: var(--ctp-mauve) }
-        if (theme_color=="Red")       { --color: var(--ctp-red) }
-        if (theme_color=="Maroon")    { --color: var(--ctp-maroon) }
-        if (theme_color=="Peach")     { --color: var(--ctp-peach) }
-        if (theme_color=="Yellow")    { --color: var(--ctp-yellow) }
-        if (theme_color=="Green")     { --color: var(--ctp-green) }
-        if (theme_color=="Teal")      { --color: var(--ctp-teal) }
-        if (theme_color=="Sky")       { --color: var(--ctp-sky) }
-        if (theme_color=="Sapphire")  { --color: var(--ctp-sapphire) }
-        if (theme_color=="Blue")      { --color: var(--ctp-blue) }
-        if (theme_color=="Lavender")  { --color: var(--ctp-lavender) }
+        if (theme_color=="Rosewater") { --color: var(--ctp-rosewater); --colora: var(--ctp-rosewatera); }
+        if (theme_color=="Flamingo")  { --color: var(--ctp-flamingo); --colora: var(--ctp-flamingoa); }
+        if (theme_color=="Pink")      { --color: var(--ctp-pink); --colora: var(--ctp-pinka); }
+        if (theme_color=="Mauve")     { --color: var(--ctp-mauve); --colora: var(--ctp-mauvea); }
+        if (theme_color=="Red")       { --color: var(--ctp-red); --colora: var(--ctp-reda); }
+        if (theme_color=="Maroon")    { --color: var(--ctp-maroon); --colora: var(--ctp-maroona); }
+        if (theme_color=="Peach")     { --color: var(--ctp-peach); --colora: var(--ctp-peacha); }
+        if (theme_color=="Yellow")    { --color: var(--ctp-yellow); --colora: var(--ctp-yellowa); }
+        if (theme_color=="Green")     { --color: var(--ctp-green); --colora: var(--ctp-greena); }
+        if (theme_color=="Teal")      { --color: var(--ctp-teal); --colora: var(--ctp-teala); }
+        if (theme_color=="Sky")       { --color: var(--ctp-sky); --colora: var(--ctp-skya); }
+        if (theme_color=="Sapphire")  { --color: var(--ctp-sapphire); --colora: var(--ctp-sapphirea); }
+        if (theme_color=="Blue")      { --color: var(--ctp-blue); --colora: var(--ctp-bluea); }
+        if (theme_color=="Lavender")  { --color: var(--ctp-lavender); --colora: var(--ctp-lavendera); }
         if (base=="Dark") { --base: var(--ctp-mantle); --mantle: var(--ctp-base); --surface: var(--ctp-surface0) }
         if (base=="Light"){ --base: var(--ctp-base); --mantle: var(--ctp-mantle); --surface: var(--ctp-surface1) }
         --color-primary-medium: var(--ctp-text);
@@ -164,7 +219,36 @@
         --color-borders-hairline: var(--surface);
         --shade-7: var(--base);
         --shade-8: var(--mantle);
-        --shade-9: var(--ctp-crust);
+        if (include_boxes) {
+            --shade-9: var(--colora);
+        } else {
+            --shade-9: var(--ctp-crust);
+        }
+        if (include_surah_boxes) {
+            .SurahPreviewRow_container__3ZfRV:hover {
+                background-color: var(--colora);
+            }
+            .SurahPreviewBlock_container__ME6vO:hover {
+                background-color: var(--colora);
+            }
+        } else {
+            .SurahPreviewRow_container__3ZfRV:hover {
+                background-color: var(--ctp-crust);
+            }
+            .SurahPreviewBlock_container__ME6vO:hover {
+                background-color: var(--ctp-crust);
+            }
+        }
+        if (include_ayah_back) {
+            .TranslationViewCell_highlightedContainer__iR1i_ {
+                background: var(--colora);
+            }
+        } else {
+            .TranslationViewCell_highlightedContainer__iR1i_ {
+                background: var(--ctp-crust);
+            }   
+        }
+        
         --color-background-default: var(--base);
         --color-success-faded: var(--mantle)
         --color-text-default: var(--ctp-text);
