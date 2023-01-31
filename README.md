@@ -1,5 +1,4 @@
 <h3 align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="0" width="0px"/><br/>
 	<img src="https://raw.githubusercontent.com/mustafakhalaf-git/Quran/main/assets/quran.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 	Catppuccin for <a href="https://quran.com">Quran</a>
