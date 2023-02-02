@@ -14,6 +14,7 @@
 @var select base "Base Color" ["Dark", "Light"]
 @var checkbox include_ayah_back "Color Ayah Background" 0
 @var checkbox include_surah_boxes "Color Surah Boxes" 0
+@var checkbox include_recently_read_boxes "Color Recently Read Boxes" 0
 @var checkbox include_boxes "Color Boxes" 0
 @var text color_translucency "Color Translucency" 0.175
 ==/UserStyle== */
@@ -229,16 +230,19 @@
             .SurahPreviewRow_container__3ZfRV:hover {
                 background-color: var(--colora);
             }
-            .SurahPreviewBlock_container__ME6vO:hover {
-                background-color: var(--colora);
-            }
         } else {
             .SurahPreviewRow_container__3ZfRV:hover {
                 background-color: var(--ctp-crust);
             }
+        }
+        if (include_recently_read_boxes) {
+            .SurahPreviewBlock_container__ME6vO:hover {
+                background-color: var(--colora);
+            }
+        } else {
             .SurahPreviewBlock_container__ME6vO:hover {
                 background-color: var(--ctp-crust);
-            }
+            }         
         }
         if (include_ayah_back) {
             .TranslationViewCell_highlightedContainer__iR1i_ {
