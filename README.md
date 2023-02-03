@@ -20,7 +20,6 @@
 
 <details>
 <summary>🌻 Latte (Dark Base, Mauve)</summary>
-<summary>PC</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteDark.png"/>
 </details>
 <details>
