@@ -19,19 +19,20 @@
 ## Previews
 
 <details>
-<summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteDark.png"/>
+<summary>🌻 Latte (Dark Base, Mauve)</summary>
+  <summary>PC</summary>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteDark.png"/>
 </details>
 <details>
-<summary>🪴 Frappé</summary>
+<summary>🪴 Frappé (Dark Base, Mauve)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/FrappeDark.png"/>
 </details>
 <details>
-<summary>🌺 Macchiato</summary>
+<summary>🌺 Macchiato (Dark Base, Mauve)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MacchiatoDark.png"/>
 </details>
 <details>
-<summary>🌿 Mocha</summary>
+<summary>🌿 Mocha (Dark Base, Mauve)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MochaDark.png"/>
 </details>
 
