@@ -22,15 +22,18 @@
 <summary>🌻 Latte (Dark Base, Mauve)</summary>
   <summary>PC</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteDark.png"/>
+  <summary>Mobile</summary>
 </details>
 <details>
 <summary>🪴 Frappé (Dark Base, Mauve)</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/FrappeDark.png"/>
-</details>
+  <summary>PC</summary>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/FrappeDark.png"/>
+  <summary>Mobile</summary>
 <details>
 <summary>🌺 Macchiato (Dark Base, Mauve)</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MacchiatoDark.png"/>
-</details>
+  <summary>PC</summary>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MacchiatoDark.png"/>
+  <summary>Mobile</summary>
 <details>
 <summary>🌿 Mocha (Dark Base, Mauve)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MochaDark.png"/>
