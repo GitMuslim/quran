@@ -16,7 +16,7 @@
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreview.webp"/>
 </p>
 
-## Previews
+## Previews (Mauve)
 
 <details>
 <summary>🌻 Latte</summary>
