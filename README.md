@@ -9,6 +9,7 @@
     <a href="https://github.com/mustafakhalaf-git/Quran/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/mustafakhalaf-git/Quran?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
     <a href="https://github.com/mustafakhalaf-git/Quran/issues"><img src="https://img.shields.io/github/issues/mustafakhalaf-git/Quran?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
     <a href="https://github.com/mustafakhalaf-git/Quran/contributors"><img src="https://img.shields.io/github/contributors/mustafakhalaf-git/Quran?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+    <a href="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/src/CatppuccinQuran.user.css"><img src="https://img.shields.io/badge/stylus-install-cba6f7?colorA=363a4f&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -19,7 +20,7 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/latte.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/latte_.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
@@ -37,11 +38,7 @@
 ## Usage
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
-2. Then install with Stylus (click on the link):
-  - [🌻 Catppuccin Latte](https://github.com/mustafakhalaf-git/Quran/raw/main/src/QuranCatppuccinLatte.user.css)
-  - [🪴 Catppuccin Frappe](https://github.com/mustafakhalaf-git/Quran/raw/main/src/QuranCatppuccinFrappe.user.css)
-  - [🌺 Catppuccin Macchiato](https://github.com/mustafakhalaf-git/Quran/raw/main/src/QuranCatppuccinMacchiato.user.css)
-  - [🌿 Catppuccin Mocha](https://github.com/mustafakhalaf-git/Quran/raw/main/src/QuranCatppuccinMocha.user.css)
+2. Then install with Stylus ([click on the link](https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/src/CatppuccinQuran.user.css)):
 3. Choose Your accent color by Setting Theme in Stylus Options
 <details>
 <summary>
