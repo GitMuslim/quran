@@ -13,26 +13,57 @@
 </p>
 
 <p align="center">
+  <details open>
+  <summary>PC (Dark Base, Mauve)</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewPC.webp"/>
+  </details>
+  <details>
+  <summary>Mobile (Dark Base, Mauve)</summary>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewMobile.webp"/>
+  </details>
+  <details>
+  <summary>PC (Light Base, Mauve)</summary>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewPC.webp"/>
+  </details>
+  <details>
+  <summary>Mobile (Light Base, Mauve)</summary>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewMobile.webp"/>
+  </details>
 </p>
 
 ## Previews (Mauve)
 
 <details>
-<summary>🌻 Latte</summary>
+<summary>🌻 Latte (PC)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteDarkPC.png"/>
 </details>
 <details>
-<summary>🪴 Frappé</summary>
+<summary>🪴 Frappé (PC)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/FrappeDarkPC.png"/>
 </details>
 <details>
-<summary>🌺 Macchiato</summary>
+<summary>🌺 Macchiato (PC)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MacchiatoDarkPC.png"/>
 </details>
 <details>
-<summary>🌿 Mocha</summary>
+<summary>🌿 Mocha (PC)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MochaDarkPC.png"/>
+</details>
+<details>
+<summary>🌻 Latte (Mobile)</summary>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteDarkMobile.png"/>
+</details>
+<details>
+<summary>🪴 Frappé (Mobile)</summary>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/FrappeDarkMobile.png"/>
+</details>
+<details>
+<summary>🌺 Macchiato (Mobile)</summary>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MacchiatoDarkMobile.png"/>
+</details>
+<details>
+<summary>🌿 Mocha (Mobile)</summary>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MochaDarkMobile.png"/>
 </details>
 
 ## Usage
