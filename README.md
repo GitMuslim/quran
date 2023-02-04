@@ -13,8 +13,10 @@
 </p>
 
 <p align="center">
+  <details open>
   <summary> Mauve, Dark, PC</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewPC.webp"/>
+  </details>
   <details>
   <summary> Mauve, Light, PC</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewPC.webp"/>
