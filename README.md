@@ -14,52 +14,56 @@
 
 <p align="center">
   <details open>
-  <summary>PC (Dark, Mauve)</summary>
+  <summary>PC (Dark Base, Mauve)</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewPC.webp"/>
   </details>
   <details>
-  <summary>PC (Light, Mauve)</summary>
+  <summary>PC (Light Base, Mauve)</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewPC.webp"/>
   </details>
   <details>
-  <summary>Mobile (Dark, Mauve)</summary>
+  <summary>Mobile (Dark Base, Mauve)</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewMobile.webp"/>
+  </details>
+  <details>
+  <summary>Mobile (Light Base, Mauve)</summary>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewMobile.webp"/>
   </details>
 </p>
 
 ## Previews (Mauve)
 
 <details>
-<summary>🌻 Latte (PC)</summary>
+<summary>🌻 Latte, Dark Base (PC)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteDarkPC.png"/>
 </details>
 <details>
-<summary>🪴 Frappé (PC)</summary>
+<summary>🪴 Frappé, Dark Base (PC)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/FrappeDarkPC.png"/>
 </details>
 <details>
-<summary>🌺 Macchiato (PC)</summary>
+<summary>🌺 Macchiato, Dark Base (PC)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MacchiatoDarkPC.png"/>
 </details>
 <details>
-<summary>🌿 Mocha (PC)</summary>
+<summary>🌿 Mocha, Dark Base (PC)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MochaDarkPC.png"/>
 </details>
 
 <details>
-<summary>🌻 Latte (Mobile)</summary>
+<summary>🌻 Latte, Dark Base (Mobile)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteDarkMobile.png"/>
 </details>
 <details>
-<summary>🪴 Frappé (Mobile)</summary>
+<summary>🪴 Frappé, Dark Base (Mobile)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/FrappeDarkMobile.png"/>
 </details>
 <details>
-<summary>🌺 Macchiato (Mobile)</summary>
+<summary>🌺 Macchiato, Dark Base (Mobile)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MacchiatoDarkMobile.png"/>
 </details>
 <details>
-<summary>🌿 Mocha (Mobile)</summary>
+<summary>🌿 Mocha, Dark Base (Mobile)</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MochaDarkMobile.png"/>
 </details>
 
