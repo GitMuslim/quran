@@ -219,6 +219,7 @@
         --color-success-medium: var(--color);
         --color-text-link: var(--color);
         --color-borders-hairline: var(--surface);
+        --shade-0: var(--base)
         --shade-7: var(--base);
         --shade-8: var(--mantle);
         if (include_boxes) {
