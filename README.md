@@ -14,15 +14,15 @@
 
 <p align="center">
   <details open>
-  <summary> Mauve, Dark, PC</summary>
+  <summary>PC (Dark, Mauve)</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewPC.webp"/>
   </details>
   <details>
-  <summary> Mauve, Light, PC</summary>
+  <summary>PC (Light, Mauve)</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewPC.webp"/>
   </details>
   <details>
-  <summary> Mauve, Dark, Mobile</summary>
+  <summary>Mobile (Dark, Mauve)</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewMobile.webp"/>
   </details>
 </p>
