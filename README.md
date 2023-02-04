@@ -18,6 +18,7 @@
   <summary> Mauve, Light, PC</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewPC.webp"/>
   </details>
+  <details>
   <summary> Mauve, Dark, Mobile</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewMobile.webp"/>
   </details>
