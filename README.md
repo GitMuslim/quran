@@ -18,12 +18,12 @@
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewPC.webp"/>
   </details>
   <details>
-  <summary>PC (Light Base, Mauve)</summary>
-  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewPC.webp"/>
-  </details>
-  <details>
   <summary>Mobile (Dark Base, Mauve)</summary>
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewMobile.webp"/>
+  </details>
+  <details>
+  <summary>PC (Light Base, Mauve)</summary>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewPC.webp"/>
   </details>
   <details>
   <summary>Mobile (Light Base, Mauve)</summary>
