@@ -20,7 +20,7 @@
   </details>
   <details>
   <summary> Mauve, Dark, Mobile</summary>
-  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LightPreviewMobile.webp"/>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewMobile.webp"/>
   </details>
 </p>
 
