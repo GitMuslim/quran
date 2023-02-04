@@ -16,7 +16,7 @@
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewPC.webp"/>
   <details>
   <summary> Mauve, Light, PC</summary>
-  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteLightPC.png"/>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LattePreviewPC.png"/>
   </details>
 </p>
 
