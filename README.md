@@ -81,7 +81,7 @@
 
 ## 💝 Thanks to
 
-- [mustafakhalaf-git](https://github.com/mustafakhalaf-git) (Inspired by  [Catppuccin for YT](https://github.com/catppuccin/youtube/))
+- [mustafakhalaf-git](https://github.com/mustafakhalaf-git)
 
 &nbsp;
 
