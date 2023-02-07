@@ -350,4 +350,71 @@
         }
         filter:saturate(2.075) brightness(1) contrast()
     }
+    .QuranReciterListHero_backgroundImage__48PjJ {
+        if (theme=="Latte") { 
+            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_rosewater.png") }
+            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_flamingo.png") }
+            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_pink.png") }
+            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_mauve.png") }
+            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_red.png") }
+            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_maroon.png") }
+            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_peach.png") }
+            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_yellow.png") }
+            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_green.png") }
+            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_teal.png") }
+            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_sky.png") }
+            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_sapphire.png") }
+            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_blue.png") }
+            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_latte_lavender.png") }
+        }
+        if (theme=="Frappe") { 
+            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_rosewater.png") }
+            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_flamingo.png") }
+            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_pink.png") }
+            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_mauve.png") }
+            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_red.png") }
+            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_maroon.png") }
+            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_peach.png") }
+            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_yellow.png") }
+            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_green.png") }
+            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_teal.png") }
+            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_sky.png") }
+            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_sapphire.png") }
+            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_blue.png") }
+            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_frappe_lavender.png") }
+        }
+        if (theme=="Macchiato") { 
+            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_rosewater.png") }
+            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_flamingo.png") }
+            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_pink.png") }
+            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_mauve.png") }
+            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_red.png") }
+            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_maroon.png") }
+            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_peach.png") }
+            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_yellow.png") }
+            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_green.png") }
+            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_teal.png") }
+            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_sky.png") }
+            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_sapphire.png") }
+            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_blue.png") }
+            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_macchiato_lavender.png") }
+        }
+        if (theme=="Mocha") { 
+            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_rosewater.png") }
+            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_flamingo.png") }
+            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_pink.png") }
+            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_mauve.png") }
+            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_red.png") }
+            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_maroon.png") }
+            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_peach.png") }
+            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_yellow.png") }
+            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_green.png") }
+            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_teal.png") }
+            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_sky.png") }
+            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_sapphire.png") }
+            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_blue.png") }
+            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/flatppuccin_4k_mocha_lavender.png") }
+        }
+        filter:saturate(2.075) brightness(1) contrast()
+    }
 }
