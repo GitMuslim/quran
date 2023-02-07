@@ -16,6 +16,7 @@
 @var checkbox include_surah_boxes "Color Surah Boxes" 0
 @var checkbox include_recently_read_boxes "Color Recently Read Boxes" 0
 @var checkbox include_boxes "Color Boxes" 0
+@var checkbox include_smi "Color Sidemenu icons" 0
 @var text color_translucency "Color Translucency" 0.175
 ==/UserStyle== */
 
@@ -256,10 +257,13 @@
         }
       
         .LinkContainer_anchor__bOj_o:hover path {
+          if (include_smi) {
+            fill: var(--color);
+          } else {
             fill: var(--ctp-text);
         }
         .IconContainer_secondaryColor__KDGmK > svg path {
-            fill: var(--ctp-overlay0);
+          fill: var(--ctp-overlay0);
         }
       
         --color-background-default: var(--base);
