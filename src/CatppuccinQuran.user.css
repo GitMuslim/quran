@@ -261,7 +261,8 @@
             fill: var(--color);
           } else {
             fill: var(--ctp-text);
-        }
+          }
+        } 
         .IconContainer_secondaryColor__KDGmK > svg path {
           fill: var(--ctp-overlay0);
         }
