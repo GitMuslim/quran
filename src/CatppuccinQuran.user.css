@@ -12,10 +12,10 @@
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
 @var select theme_color "Color" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Sky", "Sapphire", "Blue", "Lavender"]
 @var select base "Base Color" ["Dark", "Light"]
-@var checkbox include_ayah_back "Color Ayah Background" 0
-@var checkbox include_surah_boxes "Color Surah Boxes" 0
-@var checkbox include_recently_read_boxes "Color Recently Read Boxes" 0
-@var checkbox include_boxes "Color Boxes" 0
+@var checkbox include_ayah_back "Color Ayah Background" 1
+@var checkbox include_surah_boxes "Color Surah Boxes" 1
+@var checkbox include_recently_read_boxes "Color Recently Read Boxes" 1
+@var checkbox include_boxes "Color Boxes" 1
 @var checkbox include_smi "Color Sidemenu icons (on hover)" 0
 @var text color_translucency "Color Translucency" 0.175
 ==/UserStyle== */
