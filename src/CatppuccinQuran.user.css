@@ -2,7 +2,7 @@
 @name           Quran Catppuccin
 @namespace      github.com/mustafakhalaf-git/quran
 @homepageURL    https://github.com/mustafakhalaf-git/quran
-@version        1.0.8
+@version        1.0.9
 @description    Soothing pastel theme for Quran.com
 @author         mustafakhalaf-git
 @preprocessor   stylus
@@ -194,6 +194,9 @@
             --ctp-crust: #11111b;
             --ctp-shadow: #010409;
         }
+    }
+    .login_googleButton__C3bbp {
+      color: #1e2030;
     }
     :root {
         if (theme=="Latte")           { colourscheme(Latte) }
