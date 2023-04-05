@@ -2,7 +2,7 @@
 @name           Quran Catppuccin
 @namespace      github.com/mustafakhalaf-git/quran
 @homepageURL    https://github.com/mustafakhalaf-git/quran
-@version        1.1.3
+@version        1.1.4
 @description    Soothing pastel theme for Quran.com
 @author         mustafakhalaf-git
 @preprocessor   stylus
@@ -15,6 +15,7 @@
 @var checkbox include_ayah_back "Color Ayah Background" 1
 @var checkbox include_surah_boxes "Color Surah Boxes" 1
 @var checkbox include_recently_read_boxes "Color Recently Read Boxes" 1
+@var select rr_selections "Recently Read's Inside Box Color " ["None", "Slight", "Full"]
 @var checkbox include_boxes "Color Boxes" 1
 @var checkbox top_prog_bar "Color Top Bar (Audio Player)" 1
 @var checkbox include_smi "Color Sidemenu icons (on hover)" 0
@@ -192,6 +193,11 @@
             --ctp-crust: #11111b;
         }
     }
+    
+    if (include_rr_boxes) {
+
+    }
+    
     .login_googleButton__C3bbp {
       color: #000;
     }
@@ -241,6 +247,29 @@
         if (include_recently_read_boxes) {
             .SurahPreviewBlock_container__ME6vO:hover {
                 background-color: var(--colora);
+                .SurahPreviewBlock_translatedSurahName__ZZkwX {
+                    color: var(--color);
+                }
+            }
+            if (rr_selections == "Slight") {
+                .SurahPreviewBlock_container__ME6vO:hover {
+                    .SurahPreviewBlock_surahIcon__IFm5J {
+                      background-color: var(--colora);
+                    }
+                }
+            }
+            if (rr_selections == "Full") {
+                .SurahPreviewBlock_container__ME6vO:hover {
+                    .SurahPreviewBlock_surahIcon__IFm5J {
+                      background-color: var(--color);
+                    }
+                    .ChapterIconContainer_iconContainerLarge__z49r_ span {
+                      color: var(--color-text-inverse);
+                    }
+                    .SurahPreviewBlock_description__bfpmJ {
+                      color: var(--color-text-inverse);
+                    }
+                }
             }
         } else {
             .SurahPreviewBlock_container__ME6vO:hover {
