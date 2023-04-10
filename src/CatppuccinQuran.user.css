@@ -483,7 +483,7 @@ colourscheme(flavour) {
       background: var(--color);
     }
     .hLTAXKkUW9EfB9pOrI7-Z ._5WIiQPaLUf0lWAOewyKww + ._5WIiQPaLUf0lWAOewyKww {
-      border-bottom: 1px solid var();
+      border-bottom: 1px solid var(--ctp-surface0) !important;
     }
     ._1H46zEgAStEOGdfkgHL9HG ._30dOSQzFmBDI-CrRtAEr1P::after {
       border-bottom: 1px solid var(--ctp-surface0);
