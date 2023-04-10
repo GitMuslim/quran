@@ -2,7 +2,7 @@
 @name           Quran Catppuccin
 @namespace      github.com/mustafakhalaf-git/quran
 @homepageURL    https://github.com/mustafakhalaf-git/quran
-@version        1.1.7
+@version        1.1.8
 @description    Soothing pastel theme for Quran.com
 @author         mustafakhalaf-git
 @preprocessor   stylus
@@ -536,6 +536,18 @@ colourscheme(flavour) {
       border-color: #F0F0;
       background-color: var(--ctp-base);
     }
+    .IgYnElK5ORncUB4cDlh8K ._1NV2APm6gAoMUCVYTL379T {
+      background-color: var(--ctp-crust);
+    }
+    .IgYnElK5ORncUB4cDlh8K ._1NV2APm6gAoMUCVYTL379T {
+      color: var(--ctp-text);
+    }
+    ._3W_0Bn_sqt01QcfPLJrefl._3JFcH6PTnmtKeVCwtAJRY9 {
+      background: var(--ctp-crust) !important;
+    }
+    .IgYnElK5ORncUB4cDlh8K ._17PLdTbj3W5zNubhviwpZE ._2JAh9vx5SvgYoIH4_468rx ._13BkoU0mnIfDjcyQkBcB5V {
+      color: var(--ctp-text);
+    }
     ._18jCXzG3xrUhu4K2ZWmmml._1zKzpXJzTBEGlJDkvJv0DZ, ._18jCXzG3xrUhu4K2ZWmmml._1SVM-0tZyIzXklpVqixa6j {
         color: var(--color);
         background-color: var(--ctp-base);
@@ -562,6 +574,21 @@ colourscheme(flavour) {
       color: var(--color);
     }
     .container-fluid {
+      background: var(--ctp-base);
+    }
+    .IgYnElK5ORncUB4cDlh8K .QtU8ylx1AcBh9JoLzhqXv {
+      color: var(--ctp-text);
+    }
+    .IgYnElK5ORncUB4cDlh8K ._2RERR5VMAC_PZkfiCcd4vU {
+        color: var(--ctp-text);
+    }
+    .IgYnElK5ORncUB4cDlh8K {
+      border-top: 5px solid var(--color);
+    }
+    .IgYnElK5ORncUB4cDlh8K .TbM4GooGXDyHSH0KZ48TK {
+      background: var(--ctp-base);
+    }
+    .IgYnElK5ORncUB4cDlh8K {
       background: var(--ctp-base);
     }
     ._1H46zEgAStEOGdfkgHL9HG ._3WKKfenprs1hYlsRF-xOtp {
