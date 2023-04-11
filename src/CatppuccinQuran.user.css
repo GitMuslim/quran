@@ -2,7 +2,7 @@
 @name           Quran Catppuccin
 @namespace      github.com/mustafakhalaf-git/quran
 @homepageURL    https://github.com/mustafakhalaf-git/quran
-@version        1.2.5
+@version        1.2.6
 @description    Soothing pastel theme for Quran.com
 @author         mustafakhalaf-git
 @preprocessor   stylus
@@ -482,7 +482,13 @@ colourscheme(flavour) {
       color: var(--ctp-base);
       background: var(--color);
     }
-    .IgYnElK5ORncUB4cDlh8K ._17PLdTbj3W5zNubhviwpZE ._2rv5PmIs5rZLgfAJI9msqB ._3kBBrJfxZSPkMSKeH-AYdE, .IgYnElK5ORncUB4cDlh8K ._17PLdTbj3W5zNubhviwpZE ._2rv5PmIs5rZLgfAJI9msqB ._1v22IczUvKn2iVIetQCq0U {
+    .IgYnElK5ORncUB4cDlh8K .zVi56vz-B93-UaMuqeaTP {
+      color: var(--ctp-subtext1);
+    }
+    .loading {
+      border-left: 1.1em solid var(--color);
+    }
+    .IgYnElK5ORncUB4cDlh8K ._1VU_UeqFgnERvX5Dkqunw8._24tc9WWmAxGYX-1i7DegAt {
       color: var(--color);
     }
     ._1H46zEgAStEOGdfkgHL9HG ._2fTQ0vFZu9HHdD20j8QY-c {
@@ -523,7 +529,7 @@ colourscheme(flavour) {
     ._1zKzpXJzTBEGlJDkvJv0DZ, ._1SVM-0tZyIzXklpVqixa6j {
       color: var(--color-text-inverse);
       border-color: var(--color-text-inverse);
-      background-color: var(--color);
+      background-color: var(--colora);
     }
     ._1H46zEgAStEOGdfkgHL9HG ._2fTQ0vFZu9HHdD20j8QY-c {
       border-bottom: 2px solid var(--color);
