@@ -2,7 +2,7 @@
 @name           Quran Catppuccin
 @namespace      github.com/mustafakhalaf-git/quran
 @homepageURL    https://github.com/mustafakhalaf-git/quran
-@version        1.2.3
+@version        1.2.4
 @description    Soothing pastel theme for Quran.com
 @author         mustafakhalaf-git
 @preprocessor   stylus
@@ -482,8 +482,8 @@ colourscheme(flavour) {
       color: var(--ctp-base);
       background: var(--color);
     }
-        .IgYnElK5ORncUB4cDlh8K:hover ._17PLdTbj3W5zNubhviwpZE:hover ._2rv5PmIs5rZLgfAJI9msqB:hover ._3kBBrJfxZSPkMSKeH-AYdE:hover, .IgYnElK5ORncUB4cDlh8K:hover ._17PLdTbj3W5zNubhviwpZE:hover ._2rv5PmIs5rZLgfAJI9msqB:hover ._1v22IczUvKn2iVIetQCq0U:hover {
-      color: var(--color);
+    .IgYnElK5ORncUB4cDlh8K ._17PLdTbj3W5zNubhviwpZE ._2rv5PmIs5rZLgfAJI9msqB ._3kBBrJfxZSPkMSKeH-AYdE, .IgYnElK5ORncUB4cDlh8K ._17PLdTbj3W5zNubhviwpZE ._2rv5PmIs5rZLgfAJI9msqB ._1v22IczUvKn2iVIetQCq0U {
+      color: var(--ctp-color);
     }
     ._1H46zEgAStEOGdfkgHL9HG ._2fTQ0vFZu9HHdD20j8QY-c {
       border: 2px solid var(--ctp-surface0);
