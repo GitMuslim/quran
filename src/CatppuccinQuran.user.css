@@ -2,7 +2,7 @@
 @name           Quran Catppuccin
 @namespace      github.com/mustafakhalaf-git/quran
 @homepageURL    https://github.com/mustafakhalaf-git/quran
-@version        1.2.8
+@version        1.2.9
 @description    Soothing pastel theme for Quran.com
 @author         mustafakhalaf-git
 @preprocessor   stylus
@@ -227,6 +227,7 @@
         --color-text-link: var(--color);
         --color-highlight: var(--colora);
         --color-borders-hairline: var(--surface);
+        --color-secondary-faded: var(--surface);
         --shade-0: var(--base)
         --shade-7: var(--base);
         --shade-8: var(--mantle);
