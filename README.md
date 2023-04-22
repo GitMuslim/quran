@@ -55,6 +55,7 @@
 
 ## 💝 Thanks to
 
+- Allah SWT
 - [mustafakhalaf-git](https://github.com/mustafakhalaf-git)
 - [thismoon](https://github.com/thismoon)
 
