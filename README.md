@@ -13,26 +13,26 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/DarkPreviewPC.webp"/>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranPreview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/LatteDarkPC.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranLatte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/FrappeDarkPC.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranFrappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MacchiatoDarkPC.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranMacchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/MochaDarkPC.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranMocha.png"/>
 </details>
 
 ## Usage
