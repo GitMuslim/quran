@@ -22,18 +22,22 @@
 <details>
 <summary>🌻 Latte</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranLatte.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranicAudioLatte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranFrappe.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranicAudioFrappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranMacchiato.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranicAudioMacchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
 <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranMocha.png"/>
+<img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranicAudioMocha.png"/>
 </details>
 
 ## Usage
