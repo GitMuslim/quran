@@ -14,6 +14,7 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranPreview.webp"/>
+  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/quran/main/assets/QuranicAudioPreview.webp"/>
 </p>
 
 ## Previews
