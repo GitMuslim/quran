@@ -2,7 +2,7 @@
 @name           Quran Catppuccin
 @namespace      github.com/mustafakhalaf-git/quran
 @homepageURL    https://github.com/mustafakhalaf-git/quran
-@version        1.3.2
+@version        1.3.3
 @description    Soothing pastel theme for Quran.com
 @author         mustafakhalaf-git
 @preprocessor   stylus
@@ -20,7 +20,8 @@
 @var checkbox top_prog_bar "Color Top Bar (Audio Player)" 1
 @var checkbox include_smi "Color Sidemenu icons (on hover)" 0
 @var text color_translucency "Color Translucency" 0.175
-@var checkbox qa_bg "(QuranicAudio) use background in Surah list" 1 
+@var checkbox qa_bg "(QuranicAudio) use background in Surah list" 1
+@var checkbox button_background "Color background of Ayah buttons" 1
 ==/UserStyle== */
 
 @-moz-document domain("quran.com") {
@@ -335,8 +336,13 @@
       color: var(--color);
       border: 1px solid var(--color);
     }
-    .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
-      background-image: linear-gradient(to right,var(--colora),var(--colora));
+    if (button_background) {
+        .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
+          background-image: linear-gradient(to right,var(--colora),var(--colora));
+        }
+        .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
+          background-color: var(--colora);
+        }
     }
     .HomePageHero_backgroundImage__iQe4N {
         if (theme=="Latte") { 
