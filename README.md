@@ -1,14 +1,14 @@
 <h3 align="center">
 	<picture>
-		<source srcset="./assets/quran_mocha.png" width="300" alt="Bismillah" media="(prefers-color-scheme: dark)"/>
-    <source srcset="./assets/quran_latte.png" width="300" alt="Bismillah" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"/>
+		<source srcset="./assets/quran_mocha.png" width="100" alt="Logo" media="(prefers-color-scheme: dark)"/>
+    <source srcset="./assets/quran_latte.png" width="100" alt="Logo" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"/>
+    <img src="https://raw.githubusercontent.com/GitMuslim/quran/main/assets/quran_mocha.png" width="100" alt="Logo"/><br/>
 	</picture>
-  <img src="https://raw.githubusercontent.com/mustafakhalaf-git/Quran/main/assets/quran_mocha.png" width="100" alt="Logo"/><br/>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://quran.com">Quran</a> and <a href="https://quranicaudio.com">QuranicAudio</a>
+</h3>
+<h3 align="center">
+  Catppuccin for <a href="https://quran.com">Quran</a> and <a href="https://quranicaudio.com">QuranicAudio</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
-
 <p align="center">
     <a href="https://github.com/mustafakhalaf-git/Quran/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/mustafakhalaf-git/Quran?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
     <a href="https://github.com/mustafakhalaf-git/Quran/issues"><img src="https://img.shields.io/github/issues/mustafakhalaf-git/Quran?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
