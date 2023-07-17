@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           Quran Catppuccin
-@namespace      github.com/mustafakhalaf-git/quran
-@homepageURL    https://github.com/mustafakhalaf-git/quran
-@version        1.3.3
+@namespace      github.com/GitMuslim/quran
+@homepageURL    https://github.com/GitMuslim/quran
+@version        1.3.4
 @description    Soothing pastel theme for Quran.com
-@author         mustafakhalaf-git
+@author         GitMuslim
 @preprocessor   stylus
-@updateURL      https://github.com/mustafakhalaf-git/quran/raw/main/src/CatppuccinQuran.user.css
+@updateURL      https://github.com/GitMuslim/quran/raw/main/src/CatppuccinQuran.user.css
 @license        MIT
 
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
@@ -17,6 +17,8 @@
 @var checkbox include_recently_read_boxes "Color Recently Read Boxes" 1
 @var select rr_selections "Recently Read's Inside Box Color " ["None", "Slight", "Full"]
 @var checkbox include_boxes "Color Boxes" 1
+@var checkbox rounded_ayah "Rounded Ayah Border" 0
+@var text rounded_ayah_num "Border Radius" 20px
 @var checkbox top_prog_bar "Color Top Bar (Audio Player)" 1
 @var checkbox include_smi "Color Sidemenu icons (on hover)" 0
 @var text color_translucency "Color Translucency" 0.175
@@ -287,7 +289,6 @@
                 background: var(--ctp-crust);
             }   
         }
-      
         .LinkContainer_anchor__bOj_o:hover path {
           if (include_smi) {
             fill: var(--color);
@@ -325,6 +326,11 @@
         --color-text-default: var(--ctp-text);
         --color-text-faded: var(--ctp-subtext0);
         --color-background-lighten: var(--ctp-crust);
+    }
+    if (rounded_ayah) {
+        .TranslationViewCell_cellContainer__rhs1_ {
+            border-radius: rounded_ayah_num;
+        }
     }
     .Button_shadow__Epq7b {
       background-color: var(--ctp-base);
