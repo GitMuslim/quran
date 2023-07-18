@@ -17,8 +17,8 @@
 @var checkbox include_recently_read_boxes "Color Recently Read Boxes" 1
 @var select rr_selections "Recently Read's Inside Box Color " ["None", "Slight", "Full"]
 @var checkbox include_boxes "Color Boxes" 1
-@var checkbox rounded_ayah "Rounded Ayah Border" 0
-@var text rounded_ayah_num "Border Radius" 20px
+@var checkbox rounded_ayah "Rounded Ayah Border" 1
+@var text rounded_ayah_num "Border Radius" 30px
 @var checkbox top_prog_bar "Color Top Bar (Audio Player)" 1
 @var checkbox include_smi "Color Sidemenu icons (on hover)" 0
 @var text color_translucency "Color Translucency" 0.175
