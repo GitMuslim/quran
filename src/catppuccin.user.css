@@ -1,13 +1,14 @@
 /* ==UserStyle==
-@name           Quran Catppuccin
-@namespace      github.com/GitMuslim/quran
-@homepageURL    https://github.com/GitMuslim/quran
-@version        1.3.4
-@description    Soothing pastel theme for Quran.com
-@author         GitMuslim
-@preprocessor   stylus
-@updateURL      https://github.com/GitMuslim/quran/raw/main/src/CatppuccinQuran.user.css
-@license        MIT
+@name Quran Catppuccin
+@namespace github.com/GitMuslim/quran
+@homepageURL https://github.com/GitMuslim/quran
+@version 1.3.4
+@updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
+@description Soothing pastel theme for Quran
+@author GitMuslim
+@license MIT
+
+@preprocessor stylus
 
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
 @var select theme_color "Color" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Sky", "Sapphire", "Blue", "Lavender"]
