@@ -2,982 +2,696 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.3.4
+@version 1.3.5
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for Quran
 @author GitMuslim
 @license MIT
 
-@preprocessor stylus
-
-@var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
-@var select theme_color "Color" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Sky", "Sapphire", "Blue", "Lavender"]
-@var select base "Base Color" ["Dark", "Light"]
-@var checkbox include_ayah_back "Color Ayah Background" 1
-@var checkbox include_surah_boxes "Color Surah Boxes" 1
-@var checkbox include_recently_read_boxes "Color Recently Read Boxes" 1
-@var select rr_selections "Recently Read's Inside Box Color " ["None", "Slight", "Full"]
-@var checkbox include_boxes "Color Boxes" 1
-@var checkbox rounded_ayah "Rounded Ayah Border" 1
-@var text rounded_ayah_num "Border Radius" 30px
-@var checkbox top_prog_bar "Color Top Bar (Audio Player)" 1
-@var checkbox include_smi "Color Sidemenu icons (on hover)" 0
-@var text color_translucency "Color Translucency" 0.175
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["latte:Latte*", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha"]
+@var select darkFlavor "Dark Flavor" ["latte:Latte", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire*", "sky:Sky", "lavender:Lavender", "subtext0:Gray"]
+@var checkbox color_recently_read_boxes "Color Recently Read Boxes" 1
+@var select rr_selections "Recently Read's Inside Box Color" ["None", "Slight", "Full*"]
+@var checkbox color_surah_boxes "Color Surah Boxes" 1
+@var checkbox color_top_bar "Color Top Bar (Audio Player)" 1
+@var checkbox color_boxes "Color Boxes" 0
+@var checkbox color_ayah_background "Color Ayah Background" 1
+@var checkbox rounded_ayah_border "Rounded Ayah Border" 1
+@var text ayah_border_radius "Ayah Border Radius" 30px
+@var checkbox color_background_ayah_buttons "Color background of Ayah buttons" 1
+@var text color_translucency "Color Translucency" 17.5%
+@var checkbox color_sidemenu_icons "Color Sidemenu icons (on hover)" 0
 @var checkbox qa_bg "(QuranicAudio) use background in Surah list" 1
-@var checkbox button_background "Color background of Ayah buttons" 1
 ==/UserStyle== */
+@-moz-document regexp('^https?://(www\\.|next\\.)?quran\\..*') {
 
-@-moz-document domain("quran.com") {
-    colourscheme(flavour) {
-        if (flavour=="Latte") {
-            --ctp-rosewater: #dc8a78;
-            --ctp-flamingo: #dd7878;
-            --ctp-pink: #ea76cb;
-            --ctp-mauve: #8839ef;
-            --ctp-red: #d20f39;
-            --ctp-maroon: #e64553;
-            --ctp-peach: #fe640b;
-            --ctp-yellow: #df8e1d;
-            --ctp-green: #40a02b;
-            --ctp-teal: #179299;
-            --ctp-sky: #04a5e5;
-            --ctp-sapphire: #209fb5;
-            --ctp-blue: #1e66f5;
-            --ctp-lavender: #7287fd;
-            --ctp-rosewatera: rgba(220, 138, 120, color_translucency);
-            --ctp-flamingoa: rgba(221, 120, 120, color_translucency);
-            --ctp-pinka: rgba(234, 118, 203, color_translucency);
-            --ctp-mauvea: rgba(136, 57, 239, color_translucency);
-            --ctp-reda: rgba(210, 15, 57, color_translucency);
-            --ctp-maroona: rgba(230, 69, 83, color_translucency);
-            --ctp-peacha: rgba(254, 100, 11, color_translucency);
-            --ctp-yellowa: rgba(223, 142, 29, color_translucency);
-            --ctp-greena: rgba(64, 160, 43, color_translucency);
-            --ctp-teala: rgba(23, 146, 153, color_translucency);
-            --ctp-skya: rgba(4, 165, 229, color_translucency);
-            --ctp-sapphirea: rgba(32, 159, 181, color_translucency);
-            --ctp-bluea: rgba(30, 102, 245, color_translucency);
-            --ctp-lavendera: rgba(114, 135, 253, color_translucency);
-            --ctp-text: #4c4f69;
-            --ctp-subtext1: #5c5f77;
-            --ctp-subtext0: #6c6f85;
-            --ctp-overlay2: #7c7f93;
-            --ctp-overlay1: #8c8fa1;
-            --ctp-overlay0: #9ca0b0;
-            --ctp-surface2: #acb0be;
-            --ctp-surface1: #bcc0cc;
-            --ctp-surface0: #ccd0da;
-            --ctp-base: #eff1f5;
-            --ctp-mantle: #e6e9ef;
-            --ctp-crust: #dce0e8;
-        }
-        if (flavour=="Frappe") {
-            --ctp-rosewater: #f2d5cf;
-            --ctp-flamingo: #eebebe;
-            --ctp-pink: #f4b8e4;
-            --ctp-mauve: #ca9ee6;
-            --ctp-red: #e78284;
-            --ctp-maroon: #ea999c;
-            --ctp-peach: #ef9f76;
-            --ctp-yellow: #e5c890;
-            --ctp-green: #a6d189;
-            --ctp-teal: #81c8be;
-            --ctp-sky: #99d1db;
-            --ctp-sapphire: #85c1dc;
-            --ctp-blue: #8caaee;
-            --ctp-lavender: #babbf1;
-            --ctp-rosewatera: rgba(242, 213, 207, color_translucency);
-            --ctp-flamingoa: rgba(238, 190, 190, color_translucency);
-            --ctp-pinka: rgba(244, 184, 228, color_translucency);
-            --ctp-mauvea: rgba(202, 158, 230, color_translucency);
-            --ctp-reda: rgba(231, 130, 132, color_translucency);
-            --ctp-maroona: rgba(234, 153, 156, color_translucency);
-            --ctp-peacha: rgba(239, 159, 118, color_translucency);
-            --ctp-yellowa: rgba(229, 200, 144, color_translucency);
-            --ctp-greena: rgba(166, 209, 137, color_translucency);
-            --ctp-teala: rgba(129, 200, 190, color_translucency);
-            --ctp-skya: rgba(153, 209, 219, color_translucency);
-            --ctp-sapphirea: rgba(133, 193, 220, color_translucency);
-            --ctp-bluea: rgba(140, 170, 238, color_translucency);
-            --ctp-lavendera: rgba(186, 187, 241, color_translucency);
-            --ctp-text: #c6d0f5;
-            --ctp-subtext1: #b5bfe2;
-            --ctp-subtext0: #a5adce;
-            --ctp-overlay2: #949cbb;
-            --ctp-overlay1: #838ba7;
-            --ctp-overlay0: #737994;
-            --ctp-surface2: #626880;
-            --ctp-surface1: #51576d;
-            --ctp-surface0: #414559;
-            --ctp-base: #303446;
-            --ctp-mantle: #292c3c;
-            --ctp-crust: #232634;
-        }
-        if (flavour=="Macchiato") {
-            --ctp-rosewater: #f4dbd6;
-            --ctp-flamingo: #f0c6c6;
-            --ctp-pink: #f5bde6;
-            --ctp-mauve: #c6a0f6;
-            --ctp-red: #ed8796;
-            --ctp-maroon: #ee99a0;
-            --ctp-peach: #f5a97f;
-            --ctp-yellow: #eed49f;
-            --ctp-green: #a6da95;
-            --ctp-teal: #8bd5ca;
-            --ctp-sky: #91d7e3;
-            --ctp-sapphire: #7dc4e4;
-            --ctp-blue: #8aadf4;
-            --ctp-lavender: #b7bdf8;
-            --ctp-rosewatera: rgba(244, 219, 214, color_translucency);
-            --ctp-flamingoa: rgba(240, 198, 198, color_translucency);
-            --ctp-pinka: rgba(245, 189, 230, color_translucency);
-            --ctp-mauvea: rgba(198, 160, 246, color_translucency);
-            --ctp-reda: rgba(237, 135, 150, color_translucency);
-            --ctp-maroona: rgba(238, 153, 160, color_translucency);
-            --ctp-peacha: rgba(245, 169, 127, color_translucency);
-            --ctp-yellowa: rgba(238, 212, 159, color_translucency);
-            --ctp-greena: rgba(166, 218, 149, color_translucency);
-            --ctp-teala: rgba(139, 213, 202, color_translucency);
-            --ctp-skya: rgba(145, 215, 227, color_translucency);
-            --ctp-sapphirea: rgba(125, 196, 228, color_translucency);
-            --ctp-bluea: rgba(138, 173, 244, color_translucency);
-            --ctp-lavendera: rgba(183, 189, 248, color_translucency);
-            --ctp-text: #cad3f5;
-            --ctp-subtext1: #b8c0e0;
-            --ctp-subtext0: #a5adcb;
-            --ctp-overlay2: #939ab7;
-            --ctp-overlay1: #8087a2;
-            --ctp-overlay0: #6e738d;
-            --ctp-surface2: #5b6078;
-            --ctp-surface1: #494d64;
-            --ctp-surface0: #363a4f;
-            --ctp-base: #24273a;
-            --ctp-mantle: #1e2030;
-            --ctp-crust: #181926;
-        }
-        if (flavour=="Mocha") {
-            --ctp-rosewater: #f5e0dc;
-            --ctp-flamingo: #f2cdcd;
-            --ctp-pink: #f5c2e7;
-            --ctp-mauve: #cba6f7;
-            --ctp-red: #f38ba8;
-            --ctp-maroon: #eba0ac;
-            --ctp-peach: #fab387;
-            --ctp-yellow: #f9e2af;
-            --ctp-green: #a6e3a1;
-            --ctp-teal: #94e2d5;
-            --ctp-sky: #89dceb;
-            --ctp-sapphire: #74c7ec;
-            --ctp-blue: #89b4fa;
-            --ctp-lavender: #b4befe;
-            --ctp-rosewatera: rgba(245, 224, 220, color_translucency);
-            --ctp-flamingoa: rgba(242, 205, 205, color_translucency);
-            --ctp-pinka: rgba(245, 194, 231, color_translucency);
-            --ctp-mauvea: rgba(203, 166, 247, color_translucency);
-            --ctp-reda: rgba(243, 139, 168, color_translucency);
-            --ctp-maroona: rgba(235, 160, 172, color_translucency);
-            --ctp-peacha: rgba(250, 179, 135, color_translucency);
-            --ctp-yellowa: rgba(249, 226, 175, color_translucency);
-            --ctp-greena: rgba(166, 227, 161, color_translucency);
-            --ctp-teala: rgba(148, 226, 213, color_translucency);
-            --ctp-skya: rgba(137, 220, 235, color_translucency);
-            --ctp-sapphirea: rgba(116, 199, 236, color_translucency);
-            --ctp-bluea: rgba(137, 180, 250, color_translucency);
-            --ctp-lavendera: rgba(180, 190, 254, color_translucency);
-            --ctp-text: #cdd6f4;
-            --ctp-subtext1: #bac2de;
-            --ctp-subtext0: #a6adc8;
-            --ctp-overlay2: #9399b2;
-            --ctp-overlay1: #7f849c;
-            --ctp-overlay0: #6c7086;
-            --ctp-surface2: #585b70;
-            --ctp-surface1: #45475a;
-            --ctp-surface0: #313244;
-            --ctp-base: #1e1e2e;
-            --ctp-mantle: #181825;
-            --ctp-crust: #11111b;
-        }
-    }
+  @catppuccin: {
+    @latte:     { @rosewater: #dc8a78; @flamingo: #dd7878; @pink: #ea76cb; @mauve: #8839ef; @red: #d20f39; @maroon: #e64553; @peach: #fe640b; @yellow: #df8e1d; @green: #40a02b; @teal: #179299; @sky: #04a5e5; @sapphire: #209fb5; @blue: #1e66f5; @lavender: #7287fd; @text: #4c4f69; @subtext1: #5c5f77; @subtext0: #6c6f85; @overlay2: #7c7f93; @overlay1: #8c8fa1; @overlay0: #9ca0b0; @surface2: #acb0be; @surface1: #bcc0cc; @surface0: #ccd0da; @base: #eff1f5; @mantle: #e6e9ef; @crust: #dce0e8; }
+    @frappe:    { @rosewater: #f2d5cf; @flamingo: #eebebe; @pink: #f4b8e4; @mauve: #ca9ee6; @red: #e78284; @maroon: #ea999c; @peach: #ef9f76; @yellow: #e5c890; @green: #a6d189; @teal: #81c8be; @sky: #99d1db; @sapphire: #85c1dc; @blue: #8caaee; @lavender: #babbf1; @text: #c6d0f5; @subtext1: #b5bfe2; @subtext0: #a5adce; @overlay2: #949cbb; @overlay1: #838ba7; @overlay0: #737994; @surface2: #626880; @surface1: #51576d; @surface0: #414559; @base: #303446; @mantle: #292c3c; @crust: #232634; }
+    @macchiato: { @rosewater: #f4dbd6; @flamingo: #f0c6c6; @pink: #f5bde6; @mauve: #c6a0f6; @red: #ed8796; @maroon: #ee99a0; @peach: #f5a97f; @yellow: #eed49f; @green: #a6da95; @teal: #8bd5ca; @sky: #91d7e3; @sapphire: #7dc4e4; @blue: #8aadf4; @lavender: #b7bdf8; @text: #cad3f5; @subtext1: #b8c0e0; @subtext0: #a5adcb; @overlay2: #939ab7; @overlay1: #8087a2; @overlay0: #6e738d; @surface2: #5b6078; @surface1: #494d64; @surface0: #363a4f; @base: #24273a; @mantle: #1e2030; @crust: #181926; }
+    @mocha:     { @rosewater: #f5e0dc; @flamingo: #f2cdcd; @pink: #f5c2e7; @mauve: #cba6f7; @red: #f38ba8; @maroon: #eba0ac; @peach: #fab387; @yellow: #f9e2af; @green: #a6e3a1; @teal: #94e2d5; @sky: #89dceb; @sapphire: #74c7ec; @blue: #89b4fa; @lavender: #b4befe; @text: #cdd6f4; @subtext1: #bac2de; @subtext0: #a6adc8; @overlay2: #9399b2; @overlay1: #7f849c; @overlay0: #6c7086; @surface2: #585b70; @surface1: #45475a; @surface0: #313244; @base: #1e1e2e; @mantle: #181825; @crust: #11111b; }
+  }
 
-    :root {
-        if (theme_color=="Rosewater") { --color: var(--ctp-rosewater); --colora: var(--ctp-rosewatera); }
-        if (theme_color=="Flamingo")  { --color: var(--ctp-flamingo); --colora: var(--ctp-flamingoa); }
-        if (theme_color=="Pink")      { --color: var(--ctp-pink); --colora: var(--ctp-pinka); }
-        if (theme_color=="Mauve")     { --color: var(--ctp-mauve); --colora: var(--ctp-mauvea); }
-        if (theme_color=="Red")       { --color: var(--ctp-red); --colora: var(--ctp-reda); }
-        if (theme_color=="Maroon")    { --color: var(--ctp-maroon); --colora: var(--ctp-maroona); }
-        if (theme_color=="Peach")     { --color: var(--ctp-peach); --colora: var(--ctp-peacha); }
-        if (theme_color=="Yellow")    { --color: var(--ctp-yellow); --colora: var(--ctp-yellowa); }
-        if (theme_color=="Green")     { --color: var(--ctp-green); --colora: var(--ctp-greena); }
-        if (theme_color=="Teal")      { --color: var(--ctp-teal); --colora: var(--ctp-teala); }
-        if (theme_color=="Sky")       { --color: var(--ctp-sky); --colora: var(--ctp-skya); }
-        if (theme_color=="Sapphire")  { --color: var(--ctp-sapphire); --colora: var(--ctp-sapphirea); }
-        if (theme_color=="Blue")      { --color: var(--ctp-blue); --colora: var(--ctp-bluea); }
-        if (theme_color=="Lavender")  { --color: var(--ctp-lavender); --colora: var(--ctp-lavendera); }
+ #catppuccin(@lookup, @accent) {
+    @rosewater: @catppuccin[@@lookup][@rosewater];
+    @flamingo: @catppuccin[@@lookup][@flamingo];
+    @pink: @catppuccin[@@lookup][@pink];
+    @mauve: @catppuccin[@@lookup][@mauve];
+    @red: @catppuccin[@@lookup][@red];
+    @maroon: @catppuccin[@@lookup][@maroon];
+    @peach: @catppuccin[@@lookup][@peach];
+    @yellow: @catppuccin[@@lookup][@yellow];
+    @green: @catppuccin[@@lookup][@green];
+    @teal: @catppuccin[@@lookup][@teal];
+    @sky: @catppuccin[@@lookup][@sky];
+    @sapphire: @catppuccin[@@lookup][@sapphire];
+    @blue: @catppuccin[@@lookup][@blue];
+    @lavender: @catppuccin[@@lookup][@lavender];
+    @text: @catppuccin[@@lookup][@text];
+    @subtext1: @catppuccin[@@lookup][@subtext1];
+    @subtext0: @catppuccin[@@lookup][@subtext0];
+    @overlay2: @catppuccin[@@lookup][@overlay2];
+    @overlay1: @catppuccin[@@lookup][@overlay1];
+    @overlay0: @catppuccin[@@lookup][@overlay0];
+    @surface2: @catppuccin[@@lookup][@surface2];
+    @surface1: @catppuccin[@@lookup][@surface1];
+    @surface0: @catppuccin[@@lookup][@surface0];
+    @base: @catppuccin[@@lookup][@base];
+    @mantle: @catppuccin[@@lookup][@mantle];
+    @crust: @catppuccin[@@lookup][@crust];
+    @color: @catppuccin[@@lookup][@@accent];
+    
+    --color-primary-medium: @text;
+    --color-success-medium: @color;
+    --color-text-inverse: @base;
+    --color-text-link: @color;
+    --color-highlight: fade(@color, @color_translucency);
+    --color-borders-hairline: @surface0;
+    --color-secondary-faded: @surface0;
+    --shade-0: @mantle;
+    --shade-7: @mantle;
+    --shade-8: @base;
+    --color-background-alternative-faint: @base;
+    --color-background-alternative-medium: @mantle;
+    --color-secondary-medium: @mantle;
+    --color-background-default: @mantle;
+    --color-success-faded: @base;
+    --color-text-default: @text;
+    --color-text-faded: @subtext0;
+    --color-background-lighten: @crust;
+    --color-background-elevated: @base;
+    --color-background-inverse: @text;
+    & when (@color_boxes = 0) {
+        --shade-9: @crust;
+        --color-background-alternative-faded: @crust;
     }
-    .login_googleButton__C3bbp {
-      color: #000;
+    & when (@color_boxes = 1) {
+        --shade-9: fade(@color, @color_translucency);
+        --color-background-alternative-faded: fade(@color, @color_translucency);
     }
-    :root {
-        if (theme=="Latte")           { colourscheme(Latte) }
-        if (theme=="Frappe")          { colourscheme(Frappe) }
-        if (theme=="Macchiato")       { colourscheme(Macchiato) }
-        if (theme=="Mocha")           { colourscheme(Mocha) }
-        if (base=="Dark") { --base: var(--ctp-mantle); --mantle: var(--ctp-base); --surface: var(--ctp-surface0) }
-        if (base=="Light"){ --base: var(--ctp-base); --mantle: var(--ctp-mantle); --surface: var(--ctp-surface1) }
-        --color-primary-medium: var(--ctp-text);
-        --color-success-medium: var(--color);
-        --color-text-inverse: var(--ctp-base);
-        --color-text-link: var(--color);
-        --color-highlight: var(--colora);
-        --color-borders-hairline: var(--surface);
-        --color-secondary-faded: var(--surface);
-        --shade-0: var(--base)
-        --shade-7: var(--base);
-        --shade-8: var(--mantle);
-        if (include_boxes) {
-            --shade-9: var(--colora);
-        } else {
-            --shade-9: var(--ctp-crust);
+    & when (@color_surah_boxes = 0) {
+        .SurahPreviewRow_container__3ZfRV:hover {
+            background-color: @crust;
         }
-        if (include_surah_boxes) {
-            .SurahPreviewRow_container__3ZfRV:hover {
-                background-color: var(--colora);
-            }
-        } else {
-            .SurahPreviewRow_container__3ZfRV:hover {
-                background-color: var(--ctp-crust);
-            }
+    }
+    & when (@color_surah_boxes = 1) {
+        .SurahPreviewRow_container__3ZfRV:hover {
+            background-color: fade(@color, @color_translucency);
         }
-        if (include_recently_read_boxes) {
-            .SurahPreviewBlock_container__ME6vO:hover {
-                background-color: var(--colora);
-                .SurahPreviewBlock_translatedSurahName__ZZkwX {
-                    color: var(--color);
+    }
+    & when (@color_recently_read_boxes = 0) {
+        .SurahPreviewBlock_container__ME6vO:hover {
+            background-color: @crust;
+        }  
+    }
+    & when (@color_recently_read_boxes = 1) {
+        .SurahPreviewBlock_container__ME6vO:hover {
+            background-color: fade(@color, @color_translucency);
+            .SurahPreviewBlock_translatedSurahName__ZZkwX {
+                color: @color;
+            }
+            .SurahPreviewBlock_surahIcon__IFm5J {
+                & when (@rr_selections = Slight) {
+                    background-color: fade(@color, @color_translucency);
+                }
+                & when (@rr_selections = Full) {
+                    background-color: @color;
+                    color: var(--color-text-inverse);
                 }
             }
-            if (rr_selections == "Slight") {
-                .SurahPreviewBlock_container__ME6vO:hover {
-                    .SurahPreviewBlock_surahIcon__IFm5J {
-                      background-color: var(--colora);
-                    }
-                }
-            }
-            if (rr_selections == "Full") {
-                .SurahPreviewBlock_container__ME6vO:hover {
-                    .SurahPreviewBlock_surahIcon__IFm5J {
-                      background-color: var(--color);
-                    }
-                    .ChapterIconContainer_iconContainerLarge__z49r_ span {
-                      color: var(--color-text-inverse);
-                    }
-                    .SurahPreviewBlock_description__bfpmJ {
-                      color: var(--color-text-inverse);
-                    }
-                }
-            }
-        } else {
-            .SurahPreviewBlock_container__ME6vO:hover {
-                background-color: var(--ctp-crust);
-            }         
         }
-        if (include_ayah_back) {
-            .TranslationViewCell_highlightedContainer__iR1i_ {
-                background: var(--colora);
-            }
-        } else {
-            .TranslationViewCell_highlightedContainer__iR1i_ {
-                background: var(--ctp-crust);
-            }   
+    }
+    & when (@color_ayah_background = 0) {
+        .TranslationViewCell_highlightedContainer__iR1i_ {
+            background: @crust;
+        }   
+    }
+    & when (@color_ayah_background = 1) {
+        .TranslationViewCell_highlightedContainer__iR1i_ {
+            background: fade(@color, @color_translucency);
         }
-        .LinkContainer_anchor__bOj_o:hover path {
-          if (include_smi) {
-            fill: var(--color);
-          } else {
-            fill: var(--ctp-text);
-          }
-        } 
-        .IconContainer_secondaryColor__KDGmK > svg path {
-          fill: var(--ctp-overlay0);
+    }
+    & when (@color_top_bar = 0) {
+        --color-success-deep: @text;
+    }
+    & when (@color_top_bar = 1) {
+        --color-success-deep: @color;
+    }
+    & when (@rounded_ayah_border = 1) {
+        .TranslationViewCell_cellContainer__rhs1_ {
+            border-radius: @ayah_border_radius;
         }
-        .Tooltip_content__I7VNE {
-            color: var(--ctp-text);
-            background: var(--ctp-crust);
+    }
+    & when (@color_background_ayah_buttons = 1) {
+        .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
+          background-image: linear-gradient(to right,fade(@color, @color_translucency),fade(@color, @color_translucency));
         }
-        .Tooltip_content__I7VNE > span {
-            fill: var(--ctp-crust);;
-        }
-      
-        --color-background-default: var(--base);
-        --color-success-faded: var(--mantle)
-        --color-text-default: var(--ctp-text);
-        --color-text-faded: var(--ctp-subtext0);
-        --color-background-lighten: var(--ctp-crust);
-        if (top_prog_bar) {
-            --color-success-deep: var(--color);
-        } else {
-            --color-success-deep: var(--ctp-text);
+        .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
+          background-color: fade(@color, @color_translucency);
         }
     }
     [data-theme="light"] {
-        --color-borders-hairline: var(--color);
-        --color-success-medium: var(--color);
-        --color-background-elevated: var(--mantle);
+        --color-borders-hairline: @color;
+        --color-success-medium: @color;
+        --color-background-elevated: @base;
         --color-text-inverse: #FFFFFF;
-        --color-text-default: var(--ctp-text);
-        --color-text-faded: var(--ctp-subtext0);
-        --color-background-lighten: var(--ctp-crust);
+        --color-text-default: @text;
+        --color-text-faded: @subtext0;
+        --color-background-lighten: @crust;
+        --color-background-alternative-faint: @base;
     }
-    if (rounded_ayah) {
-        .TranslationViewCell_cellContainer__rhs1_ {
-            border-radius: rounded_ayah_num;
+    .LinkContainer_anchor__bOj_o:hover path {
+        & when (@color_sidemenu_icons = 0) {
+            fill: @text;
         }
+        & when (@color_sidemenu_icons = 1) {
+            fill: @color;
+        }
+    }
+    .IconContainer_secondaryColor__KDGmK > svg path {
+        fill: @overlay0;
+    }
+    .Tooltip_content__I7VNE {
+        color: @text;
+        background: @crust;
+    }
+    .Tooltip_content__I7VNE > span {
+        fill: @crust;
     }
     .Button_shadow__Epq7b {
-      background-color: var(--ctp-base);
-      color: var(--ctp-text);
-      border: 1px solid var(--ctp-crust);
+        background-color: @base;
+        color: @text;
+        border: 1px solid @crust;
     }
     .Button_shadow__Epq7b:hover {
-      background-color: var(--ctp-mantle);
-      color: var(--color);
-      border: 1px solid var(--color);
-    }
-    if (button_background) {
-        .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
-          background-image: linear-gradient(to right,var(--colora),var(--colora));
-        }
-        .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
-          background-color: var(--colora);
-        }
+      background-color: @mantle;
+      color: @color;
+      border: 1px solid @color;
     }
     .HomePageHero_backgroundImage__iQe4N {
-        if (theme=="Latte") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_rosewater.png") }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_flamingo.png") }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_pink.png") }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_mauve.png") }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_red.png") }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_maroon.png") }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_peach.png") }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_yellow.png") }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_green.png") }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_teal.png") }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_sky.png") !important }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_sapphire.png") }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_blue.png") }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_lavender.png") }
+        & when (@lookup = latte) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_lavender.png") !important }
         }
-        if (theme=="Frappe") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_rosewater.png") }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_flamingo.png") }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_pink.png") }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_mauve.png") }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_red.png") }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_maroon.png") }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_peach.png") }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_yellow.png") }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_green.png") }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_teal.png") }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_sky.png") }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_sapphire.png") }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_blue.png") }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_lavender.png") }
+        & when (@lookup = frappe) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_lavender.png") !important }
         }
-        if (theme=="Macchiato") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_rosewater.png") }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_flamingo.png") }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_pink.png") }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_mauve.png") }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_red.png") }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_maroon.png") }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_peach.png") }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_yellow.png") }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_green.png") }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_teal.png") }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_sky.png") !important }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_sapphire.png") }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_blue.png") }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_lavender.png") }
+        & when (@lookup = macchiato) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_lavender.png") !important }
         }
-        if (theme=="Mocha") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_rosewater.png") }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_flamingo.png") }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_pink.png") }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_mauve.png") }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_red.png") }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_maroon.png") }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_peach.png") }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_yellow.png") }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_green.png") }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_teal.png") }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_sky.png") }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_sapphire.png") }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_blue.png") }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_lavender.png") }
+        & when (@lookup = mocha) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_lavender.png") !important }
         }
-        filter:saturate(2.075) brightness(1) contrast()
+        filter:saturate(2.075) brightness(1);
     }
     .QuranReciterListHero_backgroundImage__48PjJ {
-        if (theme=="Latte") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_rosewater.png") }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_flamingo.png") }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_pink.png") }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_mauve.png") }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_red.png") }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_maroon.png") }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_peach.png") }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_yellow.png") }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_green.png") }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_teal.png") }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_sky.png") }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_sapphire.png") }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_blue.png") }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_lavender.png") }
+        & when (@lookup = latte) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_lavender.png") !important }
         }
-        if (theme=="Frappe") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_rosewater.png") }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_flamingo.png") }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_pink.png") }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_mauve.png") }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_red.png") }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_maroon.png") }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_peach.png") }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_yellow.png") }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_green.png") }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_teal.png") }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_sky.png") }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_sapphire.png") }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_blue.png") }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_lavender.png") }
+        & when (@lookup = frappe) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_lavender.png") !important }
         }
-        if (theme=="Macchiato") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_rosewater.png") }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_flamingo.png") }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_pink.png") }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_mauve.png") }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_red.png") }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_maroon.png") }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_peach.png") }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_yellow.png") }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_green.png") }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_teal.png") }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_sky.png") }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_sapphire.png") }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_blue.png") }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_lavender.png") }
+        & when (@lookup = macchiato) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_lavender.png") !important }
         }
-        if (theme=="Mocha") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_rosewater.png") }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_flamingo.png") }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_pink.png") }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_mauve.png") }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_red.png") }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_maroon.png") }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_peach.png") }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_yellow.png") }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_green.png") }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_teal.png") }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_sky.png") }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_sapphire.png") }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_blue.png") }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_lavender.png") }
+        & when (@lookup = mocha) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_lavender.png") !important }
         }
-        filter:saturate(2.075) brightness(1) contrast()
+        filter:saturate(2.075) brightness(1);
     }
+  } 
+
+  @media (prefers-color-scheme: light) {
+    [data-theme="auto"] {
+      #catppuccin(@lightFlavor, @accentColor);
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    [data-theme="auto"] {
+      #catppuccin(@darkFlavor, @accentColor);
+    }
+  }
+
+  [data-theme="light"] {
+    #catppuccin(@lightFlavor, @accentColor);
+  }
+  [data-theme="dark"] {
+    #catppuccin(@darkFlavor, @accentColor);
+  }
+
 }
 
-@-moz-document domain("quranicaudio.com") {
-    colourscheme(flavour) {
-        if (flavour=="Latte") {
-            --ctp-rosewater: #dc8a78;
-            --ctp-flamingo: #dd7878;
-            --ctp-pink: #ea76cb;
-            --ctp-mauve: #8839ef;
-            --ctp-red: #d20f39;
-            --ctp-maroon: #e64553;
-            --ctp-peach: #fe640b;
-            --ctp-yellow: #df8e1d;
-            --ctp-green: #40a02b;
-            --ctp-teal: #179299;
-            --ctp-sky: #04a5e5;
-            --ctp-sapphire: #209fb5;
-            --ctp-blue: #1e66f5;
-            --ctp-lavender: #7287fd;
-            --ctp-rosewatera: rgba(220, 138, 120, color_translucency);
-            --ctp-flamingoa: rgba(221, 120, 120, color_translucency);
-            --ctp-pinka: rgba(234, 118, 203, color_translucency);
-            --ctp-mauvea: rgba(136, 57, 239, color_translucency);
-            --ctp-reda: rgba(210, 15, 57, color_translucency);
-            --ctp-maroona: rgba(230, 69, 83, color_translucency);
-            --ctp-peacha: rgba(254, 100, 11, color_translucency);
-            --ctp-yellowa: rgba(223, 142, 29, color_translucency);
-            --ctp-greena: rgba(64, 160, 43, color_translucency);
-            --ctp-teala: rgba(23, 146, 153, color_translucency);
-            --ctp-skya: rgba(4, 165, 229, color_translucency);
-            --ctp-sapphirea: rgba(32, 159, 181, color_translucency);
-            --ctp-bluea: rgba(30, 102, 245, color_translucency);
-            --ctp-lavendera: rgba(114, 135, 253, color_translucency);
-            --ctp-text: #4c4f69;
-            --ctp-subtext1: #5c5f77;
-            --ctp-subtext0: #6c6f85;
-            --ctp-overlay2: #7c7f93;
-            --ctp-overlay1: #8c8fa1;
-            --ctp-overlay0: #9ca0b0;
-            --ctp-surface2: #acb0be;
-            --ctp-surface1: #bcc0cc;
-            --ctp-surface0: #ccd0da;
-            --ctp-base: #eff1f5;
-            --ctp-mantle: #e6e9ef;
-            --ctp-crust: #dce0e8;
-        }
-        if (flavour=="Frappe") {
-            --ctp-rosewater: #f2d5cf;
-            --ctp-flamingo: #eebebe;
-            --ctp-pink: #f4b8e4;
-            --ctp-mauve: #ca9ee6;
-            --ctp-red: #e78284;
-            --ctp-maroon: #ea999c;
-            --ctp-peach: #ef9f76;
-            --ctp-yellow: #e5c890;
-            --ctp-green: #a6d189;
-            --ctp-teal: #81c8be;
-            --ctp-sky: #99d1db;
-            --ctp-sapphire: #85c1dc;
-            --ctp-blue: #8caaee;
-            --ctp-lavender: #babbf1;
-            --ctp-rosewatera: rgba(242, 213, 207, color_translucency);
-            --ctp-flamingoa: rgba(238, 190, 190, color_translucency);
-            --ctp-pinka: rgba(244, 184, 228, color_translucency);
-            --ctp-mauvea: rgba(202, 158, 230, color_translucency);
-            --ctp-reda: rgba(231, 130, 132, color_translucency);
-            --ctp-maroona: rgba(234, 153, 156, color_translucency);
-            --ctp-peacha: rgba(239, 159, 118, color_translucency);
-            --ctp-yellowa: rgba(229, 200, 144, color_translucency);
-            --ctp-greena: rgba(166, 209, 137, color_translucency);
-            --ctp-teala: rgba(129, 200, 190, color_translucency);
-            --ctp-skya: rgba(153, 209, 219, color_translucency);
-            --ctp-sapphirea: rgba(133, 193, 220, color_translucency);
-            --ctp-bluea: rgba(140, 170, 238, color_translucency);
-            --ctp-lavendera: rgba(186, 187, 241, color_translucency);
-            --ctp-text: #c6d0f5;
-            --ctp-subtext1: #b5bfe2;
-            --ctp-subtext0: #a5adce;
-            --ctp-overlay2: #949cbb;
-            --ctp-overlay1: #838ba7;
-            --ctp-overlay0: #737994;
-            --ctp-surface2: #626880;
-            --ctp-surface1: #51576d;
-            --ctp-surface0: #414559;
-            --ctp-base: #303446;
-            --ctp-mantle: #292c3c;
-            --ctp-crust: #232634;
-        }
-        if (flavour=="Macchiato") {
-            --ctp-rosewater: #f4dbd6;
-            --ctp-flamingo: #f0c6c6;
-            --ctp-pink: #f5bde6;
-            --ctp-mauve: #c6a0f6;
-            --ctp-red: #ed8796;
-            --ctp-maroon: #ee99a0;
-            --ctp-peach: #f5a97f;
-            --ctp-yellow: #eed49f;
-            --ctp-green: #a6da95;
-            --ctp-teal: #8bd5ca;
-            --ctp-sky: #91d7e3;
-            --ctp-sapphire: #7dc4e4;
-            --ctp-blue: #8aadf4;
-            --ctp-lavender: #b7bdf8;
-            --ctp-rosewatera: rgba(244, 219, 214, color_translucency);
-            --ctp-flamingoa: rgba(240, 198, 198, color_translucency);
-            --ctp-pinka: rgba(245, 189, 230, color_translucency);
-            --ctp-mauvea: rgba(198, 160, 246, color_translucency);
-            --ctp-reda: rgba(237, 135, 150, color_translucency);
-            --ctp-maroona: rgba(238, 153, 160, color_translucency);
-            --ctp-peacha: rgba(245, 169, 127, color_translucency);
-            --ctp-yellowa: rgba(238, 212, 159, color_translucency);
-            --ctp-greena: rgba(166, 218, 149, color_translucency);
-            --ctp-teala: rgba(139, 213, 202, color_translucency);
-            --ctp-skya: rgba(145, 215, 227, color_translucency);
-            --ctp-sapphirea: rgba(125, 196, 228, color_translucency);
-            --ctp-bluea: rgba(138, 173, 244, color_translucency);
-            --ctp-lavendera: rgba(183, 189, 248, color_translucency);
-            --ctp-text: #cad3f5;
-            --ctp-subtext1: #b8c0e0;
-            --ctp-subtext0: #a5adcb;
-            --ctp-overlay2: #939ab7;
-            --ctp-overlay1: #8087a2;
-            --ctp-overlay0: #6e738d;
-            --ctp-surface2: #5b6078;
-            --ctp-surface1: #494d64;
-            --ctp-surface0: #363a4f;
-            --ctp-base: #24273a;
-            --ctp-mantle: #1e2030;
-            --ctp-crust: #181926;
-        }
-        if (flavour=="Mocha") {
-            --ctp-rosewater: #f5e0dc;
-            --ctp-flamingo: #f2cdcd;
-            --ctp-pink: #f5c2e7;
-            --ctp-mauve: #cba6f7;
-            --ctp-red: #f38ba8;
-            --ctp-maroon: #eba0ac;
-            --ctp-peach: #fab387;
-            --ctp-yellow: #f9e2af;
-            --ctp-green: #a6e3a1;
-            --ctp-teal: #94e2d5;
-            --ctp-sky: #89dceb;
-            --ctp-sapphire: #74c7ec;
-            --ctp-blue: #89b4fa;
-            --ctp-lavender: #b4befe;
-            --ctp-rosewatera: rgba(245, 224, 220, color_translucency);
-            --ctp-flamingoa: rgba(242, 205, 205, color_translucency);
-            --ctp-pinka: rgba(245, 194, 231, color_translucency);
-            --ctp-mauvea: rgba(203, 166, 247, color_translucency);
-            --ctp-reda: rgba(243, 139, 168, color_translucency);
-            --ctp-maroona: rgba(235, 160, 172, color_translucency);
-            --ctp-peacha: rgba(250, 179, 135, color_translucency);
-            --ctp-yellowa: rgba(249, 226, 175, color_translucency);
-            --ctp-greena: rgba(166, 227, 161, color_translucency);
-            --ctp-teala: rgba(148, 226, 213, color_translucency);
-            --ctp-skya: rgba(137, 220, 235, color_translucency);
-            --ctp-sapphirea: rgba(116, 199, 236, color_translucency);
-            --ctp-bluea: rgba(137, 180, 250, color_translucency);
-            --ctp-lavendera: rgba(180, 190, 254, color_translucency);
-            --ctp-text: #cdd6f4;
-            --ctp-subtext1: #bac2de;
-            --ctp-subtext0: #a6adc8;
-            --ctp-overlay2: #9399b2;
-            --ctp-overlay1: #7f849c;
-            --ctp-overlay0: #6c7086;
-            --ctp-surface2: #585b70;
-            --ctp-surface1: #45475a;
-            --ctp-surface0: #313244;
-            --ctp-base: #1e1e2e;
-            --ctp-mantle: #181825;
-            --ctp-crust: #11111b;
-        }
-    }
+@-moz-document regexp('^https?://(www\\.|www\\.)?quranicaudio\\..*') {
+    
+  @catppuccin: {
+    @latte:     { @rosewater: #dc8a78; @flamingo: #dd7878; @pink: #ea76cb; @mauve: #8839ef; @red: #d20f39; @maroon: #e64553; @peach: #fe640b; @yellow: #df8e1d; @green: #40a02b; @teal: #179299; @sky: #04a5e5; @sapphire: #209fb5; @blue: #1e66f5; @lavender: #7287fd; @text: #4c4f69; @subtext1: #5c5f77; @subtext0: #6c6f85; @overlay2: #7c7f93; @overlay1: #8c8fa1; @overlay0: #9ca0b0; @surface2: #acb0be; @surface1: #bcc0cc; @surface0: #ccd0da; @base: #eff1f5; @mantle: #e6e9ef; @crust: #dce0e8; }
+    @frappe:    { @rosewater: #f2d5cf; @flamingo: #eebebe; @pink: #f4b8e4; @mauve: #ca9ee6; @red: #e78284; @maroon: #ea999c; @peach: #ef9f76; @yellow: #e5c890; @green: #a6d189; @teal: #81c8be; @sky: #99d1db; @sapphire: #85c1dc; @blue: #8caaee; @lavender: #babbf1; @text: #c6d0f5; @subtext1: #b5bfe2; @subtext0: #a5adce; @overlay2: #949cbb; @overlay1: #838ba7; @overlay0: #737994; @surface2: #626880; @surface1: #51576d; @surface0: #414559; @base: #303446; @mantle: #292c3c; @crust: #232634; }
+    @macchiato: { @rosewater: #f4dbd6; @flamingo: #f0c6c6; @pink: #f5bde6; @mauve: #c6a0f6; @red: #ed8796; @maroon: #ee99a0; @peach: #f5a97f; @yellow: #eed49f; @green: #a6da95; @teal: #8bd5ca; @sky: #91d7e3; @sapphire: #7dc4e4; @blue: #8aadf4; @lavender: #b7bdf8; @text: #cad3f5; @subtext1: #b8c0e0; @subtext0: #a5adcb; @overlay2: #939ab7; @overlay1: #8087a2; @overlay0: #6e738d; @surface2: #5b6078; @surface1: #494d64; @surface0: #363a4f; @base: #24273a; @mantle: #1e2030; @crust: #181926; }
+    @mocha:     { @rosewater: #f5e0dc; @flamingo: #f2cdcd; @pink: #f5c2e7; @mauve: #cba6f7; @red: #f38ba8; @maroon: #eba0ac; @peach: #fab387; @yellow: #f9e2af; @green: #a6e3a1; @teal: #94e2d5; @sky: #89dceb; @sapphire: #74c7ec; @blue: #89b4fa; @lavender: #b4befe; @text: #cdd6f4; @subtext1: #bac2de; @subtext0: #a6adc8; @overlay2: #9399b2; @overlay1: #7f849c; @overlay0: #6c7086; @surface2: #585b70; @surface1: #45475a; @surface0: #313244; @base: #1e1e2e; @mantle: #181825; @crust: #11111b; }
+  }
 
-    :root {
-        if (theme_color=="Rosewater") { --color: var(--ctp-rosewater); --colora: var(--ctp-rosewatera); }
-        if (theme_color=="Flamingo")  { --color: var(--ctp-flamingo); --colora: var(--ctp-flamingoa); }
-        if (theme_color=="Pink")      { --color: var(--ctp-pink); --colora: var(--ctp-pinka); }
-        if (theme_color=="Mauve")     { --color: var(--ctp-mauve); --colora: var(--ctp-mauvea); }
-        if (theme_color=="Red")       { --color: var(--ctp-red); --colora: var(--ctp-reda); }
-        if (theme_color=="Maroon")    { --color: var(--ctp-maroon); --colora: var(--ctp-maroona); }
-        if (theme_color=="Peach")     { --color: var(--ctp-peach); --colora: var(--ctp-peacha); }
-        if (theme_color=="Yellow")    { --color: var(--ctp-yellow); --colora: var(--ctp-yellowa); }
-        if (theme_color=="Green")     { --color: var(--ctp-green); --colora: var(--ctp-greena); }
-        if (theme_color=="Teal")      { --color: var(--ctp-teal); --colora: var(--ctp-teala); }
-        if (theme_color=="Sky")       { --color: var(--ctp-sky); --colora: var(--ctp-skya); }
-        if (theme_color=="Sapphire")  { --color: var(--ctp-sapphire); --colora: var(--ctp-sapphirea); }
-        if (theme_color=="Blue")      { --color: var(--ctp-blue); --colora: var(--ctp-bluea); }
-        if (theme_color=="Lavender")  { --color: var(--ctp-lavender); --colora: var(--ctp-lavendera); }
-    }
-    :root {
-        if (theme=="Latte")           { colourscheme(Latte) }
-        if (theme=="Frappe")          { colourscheme(Frappe) }
-        if (theme=="Macchiato")       { colourscheme(Macchiato) }
-        if (theme=="Mocha")           { colourscheme(Mocha) }
-    }
-    body {
-        background: var(--ctp-base);
-        color: var(--ctp-text);
-    }
+ #catppuccin(@lookup, @accent) {
+    @rosewater: @catppuccin[@@lookup][@rosewater];
+    @flamingo: @catppuccin[@@lookup][@flamingo];
+    @pink: @catppuccin[@@lookup][@pink];
+    @mauve: @catppuccin[@@lookup][@mauve];
+    @red: @catppuccin[@@lookup][@red];
+    @maroon: @catppuccin[@@lookup][@maroon];
+    @peach: @catppuccin[@@lookup][@peach];
+    @yellow: @catppuccin[@@lookup][@yellow];
+    @green: @catppuccin[@@lookup][@green];
+    @teal: @catppuccin[@@lookup][@teal];
+    @sky: @catppuccin[@@lookup][@sky];
+    @sapphire: @catppuccin[@@lookup][@sapphire];
+    @blue: @catppuccin[@@lookup][@blue];
+    @lavender: @catppuccin[@@lookup][@lavender];
+    @text: @catppuccin[@@lookup][@text];
+    @subtext1: @catppuccin[@@lookup][@subtext1];
+    @subtext0: @catppuccin[@@lookup][@subtext0];
+    @overlay2: @catppuccin[@@lookup][@overlay2];
+    @overlay1: @catppuccin[@@lookup][@overlay1];
+    @overlay0: @catppuccin[@@lookup][@overlay0];
+    @surface2: @catppuccin[@@lookup][@surface2];
+    @surface1: @catppuccin[@@lookup][@surface1];
+    @surface0: @catppuccin[@@lookup][@surface0];
+    @base: @catppuccin[@@lookup][@base];
+    @mantle: @catppuccin[@@lookup][@mantle];
+    @crust: @catppuccin[@@lookup][@crust];
+    @color: @catppuccin[@@lookup][@@accent];
+     
+    background: @base;
+    color: @text;
+    
     a:hover, a:focus {
-      color: var(--color);
+      color: @color;
     }
     .panel {
-      background-color: var(--ctp-base);
+      background-color: @base;
     }
     .list-group-item {
-      background-color: var(--ctp-base);
-  }
+      background-color: @base;
+    }
     ._5TJ43lQyONjBIJNDY2QjI {
-        color: var(--color-text-inverse)
+      color: var(--color-text-inverse)
     }
     ._1H46zEgAStEOGdfkgHL9HG .xgAnHe4c5O24IQNBuL8rq {
-      border: 2px solid var(--ctp-surface0);
-      color: var(--ctp-base);
-      background: var(--color);
+      border: 2px solid @surface0;
+      color: @base;
+      background: @color;
     }
     .IgYnElK5ORncUB4cDlh8K .zVi56vz-B93-UaMuqeaTP {
-      color: var(--ctp-subtext1);
+      color: @subtext1;
     }
     .loading {
-      border-left: 1.1em solid var(--color);
+      border-left: 1.1em solid @color;
     }
     .IgYnElK5ORncUB4cDlh8K ._1VU_UeqFgnERvX5Dkqunw8._24tc9WWmAxGYX-1i7DegAt {
-      color: var(--color);
+      color: @color;
     }
     ._1H46zEgAStEOGdfkgHL9HG ._2fTQ0vFZu9HHdD20j8QY-c {
-      border: 2px solid var(--ctp-surface0);
-      background: var(--color);
-      color: var(--ctp-base);
+      border: 2px solid @surface0;
+      background: @color;
+      color: @base;
     }
     .hLTAXKkUW9EfB9pOrI7-Z ._5WIiQPaLUf0lWAOewyKww + ._5WIiQPaLUf0lWAOewyKww {
-      border-bottom: 1px solid var(--ctp-surface0) !important;
+      border-bottom: 1px solid @surface0 !important;
     }
     ._1H46zEgAStEOGdfkgHL9HG ._30dOSQzFmBDI-CrRtAEr1P::after {
-      border-bottom: 1px solid var(--ctp-surface0);
+      border-bottom: 1px solid @surface0;
     }
     ._1H46zEgAStEOGdfkgHL9HG {
-        background: var(--ctp-base);
+        background: @base;
     }
     ._1H46zEgAStEOGdfkgHL9HG ._3WKKfenprs1hYlsRF-xOtp .ttnuIA4M9MIsH3LR7pTUN {
-      color: var(--ctp-text);
+      color: @text;
     }
     ._1H46zEgAStEOGdfkgHL9HG ._3WKKfenprs1hYlsRF-xOtp:hover {
-      background-color: var(--ctp-mantle);
+      background-color: @mantle;
     }
     .hLTAXKkUW9EfB9pOrI7-Z ._5WIiQPaLUf0lWAOewyKww.lni3t329EIw6-o0N7Vb3j {
-      border-bottom: 2px solid var(--color);
+      border-bottom: 2px solid @color;
     }
     .hLTAXKkUW9EfB9pOrI7-Z {
-        background-color: var(--ctp-base)
+      background-color: @base
     }
     .hLTAXKkUW9EfB9pOrI7-Z ._5WIiQPaLUf0lWAOewyKww a {
-      color: var(--color);
+      color: @color;
     }
     .YuRhw1tjUohnA3r6u0TTU {
-      background-color: var(--color);
+      background-color: @color;
     }
     .hLTAXKkUW9EfB9pOrI7-Z ._5WIiQPaLUf0lWAOewyKww:hover {
-      background-color: var(--ctp-mantle);
+      background-color: @mantle;
     }
     ._1zKzpXJzTBEGlJDkvJv0DZ, ._1SVM-0tZyIzXklpVqixa6j {
       color: var(--color-text-inverse);
       border-color: var(--color-text-inverse);
-      background-color: var(--colora);
+      background-color: fade(@color, @color_translucency);
     }
     ._1H46zEgAStEOGdfkgHL9HG ._2fTQ0vFZu9HHdD20j8QY-c {
-      border-bottom: 2px solid var(--color);
+      border-bottom: 2px solid @color;
     }
     .hLTAXKkUW9EfB9pOrI7-Z ._5WIiQPaLUf0lWAOewyKww {
-      border-bottom: 2px solid var(--ctp-surface0);
-  }
+      border-bottom: 2px solid @surface0;
+    }
     .text-muted {
-      color: var(--ctp-text);
+      color: @text;
     }
     .Cavg2Jjg5D0kWBsE8Ux-t {
-      color: var(--ctp-subtext0);
+      color: @subtext0;
     }
     .list-group-item {
-      border-color: var(--ctp-surface0);
+      border-color: @surface0;
     }
     ._3S_wx_oujN5yF0Tq6rbG-1 .fa-play-circle {
-      color: var(--ctp-text);
+      color: @text;
     }
     ._1zKzpXJzTBEGlJDkvJv0DZ:hover, ._1SVM-0tZyIzXklpVqixa6j:hover {
-      color: var(--color);
+      color: @color;
       border-color: #F0F0;
-      background-color: var(--ctp-base);
+      background-color: @base;
     }
     .IgYnElK5ORncUB4cDlh8K ._1NV2APm6gAoMUCVYTL379T {
-      background-color: var(--ctp-crust);
+      background-color: @crust;
     }
     .IgYnElK5ORncUB4cDlh8K ._1NV2APm6gAoMUCVYTL379T {
-      color: var(--ctp-text);
+      color: @text;
     }
     ._3W_0Bn_sqt01QcfPLJrefl._3JFcH6PTnmtKeVCwtAJRY9 {
-      background: var(--ctp-crust) !important;
+      background: @crust !important;
     }
     .IgYnElK5ORncUB4cDlh8K ._17PLdTbj3W5zNubhviwpZE ._2JAh9vx5SvgYoIH4_468rx ._13BkoU0mnIfDjcyQkBcB5V {
-      color: var(--ctp-text);
+      color: @text;
     }
     ._18jCXzG3xrUhu4K2ZWmmml._1zKzpXJzTBEGlJDkvJv0DZ, ._18jCXzG3xrUhu4K2ZWmmml._1SVM-0tZyIzXklpVqixa6j {
-        color: var(--color);
-        background-color: var(--ctp-base);
-        border-color: var(--color);
+        color: @color;
+        background-color: @base;
+        border-color: @color;
     }
     ._18jCXzG3xrUhu4K2ZWmmml._1zKzpXJzTBEGlJDkvJv0DZ:hover, ._18jCXzG3xrUhu4K2ZWmmml._1SVM-0tZyIzXklpVqixa6j:hover {
-        color: var(--ctp-base);
-        background-color: var(--color);
+        color: @base;
+        background-color: @color;
         border-color: #F0F0;
     }
     ._1jAnxeOihvYMVhVKA5RP {
-      color: var(--ctp-subtext1);
+      color: @subtext1;
     }
     ._3S_wx_oujN5yF0Tq6rbG-1._23ONANtGWd1NzQ3LRlP0Z0 {
-      background-color: var(--ctp-mantle);
+      background-color: @mantle;
     }
     .list-group-item._23ONANtGWd1NzQ3LRlP0Z0 ._1HQ8kdinQL0LkanjPCIddZ div > * {
-      color: var(--color);
+      color: @color;
     }
     ._18oxLw1FmKJHSCQOsQuafs {
-      background-color: var(--color);
+      background-color: @color;
     }
     ._3W_0Bn_sqt01QcfPLJrefl {
-      background-color: var(--ctp-mantle);
+      background-color: @mantle;
     }
     .text-primary {
-      color: var(--color);
+      color: @color;
     }
     .container-fluid {
-      background: var(--ctp-base);
+      background: @base;
     }
     .IgYnElK5ORncUB4cDlh8K .QtU8ylx1AcBh9JoLzhqXv {
-      color: var(--ctp-text);
+      color: @text;
     }
     .IgYnElK5ORncUB4cDlh8K ._2RERR5VMAC_PZkfiCcd4vU {
-        color: var(--ctp-text);
+        color: @text;
     }
     .IgYnElK5ORncUB4cDlh8K {
-      border-top: 5px solid var(--color);
+      border-top: 5px solid @color;
     }
     .IgYnElK5ORncUB4cDlh8K .TbM4GooGXDyHSH0KZ48TK {
-      background: var(--ctp-base);
+      background: @base;
     }
     .IgYnElK5ORncUB4cDlh8K {
-      background: var(--ctp-base);
+      background: @base;
     }
     ._1H46zEgAStEOGdfkgHL9HG ._3WKKfenprs1hYlsRF-xOtp {
-      border-bottom: 1px solid var(--ctp-base);
+      border-bottom: 1px solid @base;
     }
     .col-md-12 {
-      background: var(--ctp-base);
+      background: @base;
     }
     .xlrAsXgKdsOla58BXVSKq.t0xN3tTP_1ccJ2q1zDCJ_ {
-      color: var(--color);
+      color: @color;
     }
     ._3txt-LWgaQNhV6ClozXxJp {
-      color: var(--ctp-subtext1);
+      color: @subtext1;
     }
-    if (qa_bg) {
-        .YuRhw1tjUohnA3r6u0TTU { 
-            if (theme=="Latte") { 
-                if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_rosewater.png") !important }
-                if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_flamingo.png") !important }
-                if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_pink.png") !important }
-                if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_mauve.png") !important }
-                if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_red.png") !important }
-                if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_maroon.png") !important }
-                if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_peach.png") !important }
-                if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_yellow.png") !important }
-                if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_green.png") !important }
-                if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_teal.png") !important }
-                if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_sky.png") !important }
-                if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_sapphire.png") !important }
-                if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_blue.png") !important }
-                if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_lavender.png") !important }
-            }
-            if (theme=="Frappe") { 
-                if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_rosewater.png") !important }
-                if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_flamingo.png") !important }
-                if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_pink.png") !important }
-                if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_mauve.png") !important }
-                if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_red.png") !important }
-                if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_maroon.png") !important }
-                if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_peach.png") !important }
-                if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_yellow.png") !important }
-                if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_green.png") !important }
-                if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_teal.png") !important }
-                if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_sky.png") !important }
-                if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_sapphire.png") !important }
-                if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_blue.png") !important }
-                if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_lavender.png") !important }
-            }
-            if (theme=="Macchiato") { 
-                if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_rosewater.png") !important }
-                if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_flamingo.png") !important }
-                if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_pink.png") !important }
-                if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_mauve.png") !important }
-                if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_red.png") !important }
-                if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_maroon.png") !important }
-                if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_peach.png") !important }
-                if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_yellow.png") !important }
-                if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_green.png") !important; }
-                if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_teal.png") !important }
-                if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_sky.png") !important }
-                if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_sapphire.png") !important }
-                if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_blue.png") !important }
-                if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_lavender.png") !important }
-            }
-            if (theme=="Mocha") { 
-                if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_rosewater.png") !important }
-                if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_flamingo.png") !important }
-                if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_pink.png") !important }
-                if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_mauve.png") !important }
-                if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_red.png") !important }
-                if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_maroon.png") !important }
-                if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_peach.png") !important }
-                if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_yellow.png") !important }
-                if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_green.png") !important }
-                if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_teal.png") !important }
-                if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_sky.png") !important }
-                if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_sapphire.png") !important }
-                if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_blue.png") !important }
-                if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_lavender.png") !important }
-            }
-            filter:saturate(2.075) brightness(1) contrast()
+    & when (@qa_bg = 1) {
+      .YuRhw1tjUohnA3r6u0TTU {
+        & when (@lookup = latte) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_lavender.png") !important }
         }
+        & when (@lookup = frappe) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_lavender.png") !important }
+        }
+        & when (@lookup = macchiato) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_lavender.png") !important }
+        }
+        & when (@lookup = mocha) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_lavender.png") !important }
+        }
+        filter:saturate(2.075) brightness(1);
+      }
     }
-    ._1v6-6EhmtCbJXVYGMR31xA { 
-        if (theme=="Latte") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_rosewater.png") !important }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_flamingo.png") !important }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_pink.png") !important }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_mauve.png") !important }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_red.png") !important }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_maroon.png") !important }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_peach.png") !important }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_yellow.png") !important }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_green.png") !important }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_teal.png") !important }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_sky.png") !important }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_sapphire.png") !important }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_blue.png") !important }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/latte_lavender.png") !important }
+    ._1v6-6EhmtCbJXVYGMR31xA {
+        & when (@lookup = latte) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/latte_lavender.png") !important }
         }
-        if (theme=="Frappe") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_rosewater.png") !important }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_flamingo.png") !important }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_pink.png") !important }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_mauve.png") !important }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_red.png") !important }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_maroon.png") !important }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_peach.png") !important }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_yellow.png") !important }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_green.png") !important }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_teal.png") !important }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_sky.png") !important }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_sapphire.png") !important }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_blue.png") !important }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/frappe_lavender.png") !important }
+        & when (@lookup = frappe) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/frappe_lavender.png") !important }
         }
-        if (theme=="Macchiato") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_rosewater.png") !important }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_flamingo.png") !important }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_pink.png") !important }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_mauve.png") !important }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_red.png") !important }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_maroon.png") !important }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_peach.png") !important }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_yellow.png") !important }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_green.png") !important; }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_teal.png") !important }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_sky.png") !important }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_sapphire.png") !important }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_blue.png") !important }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/macchiato_lavender.png") !important }
+        & when (@lookup = macchiato) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/macchiato_lavender.png") !important }
         }
-        if (theme=="Mocha") { 
-            if (theme_color=="Rosewater") { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_rosewater.png") !important }
-            if (theme_color=="Flamingo")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_flamingo.png") !important }
-            if (theme_color=="Pink")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_pink.png") !important }
-            if (theme_color=="Mauve")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_mauve.png") !important }
-            if (theme_color=="Red")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_red.png") !important }
-            if (theme_color=="Maroon")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_maroon.png") !important }
-            if (theme_color=="Peach")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_peach.png") !important }
-            if (theme_color=="Yellow")    { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_yellow.png") !important }
-            if (theme_color=="Green")     { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_green.png") !important }
-            if (theme_color=="Teal")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_teal.png") !important }
-            if (theme_color=="Sky")       { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_sky.png") !important }
-            if (theme_color=="Sapphire")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_sapphire.png") !important }
-            if (theme_color=="Blue")      { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_blue.png") !important }
-            if (theme_color=="Lavender")  { background-image:url("https://github.com/mustafakhalaf-git/quran/raw/main/src/background/mocha_lavender.png") !important }
+        & when (@lookup = mocha) {
+            & when (@accent = rosewater) { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_rosewater.png") !important }
+            & when (@accent = flamingo)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_flamingo.png") !important }
+            & when (@accent = pink)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_pink.png") !important }
+            & when (@accent = mauve)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_mauve.png") !important }
+            & when (@accent = red)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_red.png") !important }
+            & when (@accent = maroon)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_maroon.png") !important }
+            & when (@accent = peach)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_peach.png") !important }
+            & when (@accent = yellow)    { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_yellow.png") !important }
+            & when (@accent = green)     { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_green.png") !important }
+            & when (@accent = teal)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_teal.png") !important }
+            & when (@accent = sky)       { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_sky.png") !important }
+            & when (@accent = sapphire)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_sapphire.png") !important }
+            & when (@accent = blue)      { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_blue.png") !important }
+            & when (@accent = lavender)  { background-image:url("https://github.com/GitMuslim/quran/raw/main/src/background/mocha_lavender.png") !important }
         }
-        filter:saturate(2.075) brightness(1) contrast()
+        filter:saturate(2.075) brightness(1);
     }
+  }
+
+  @media (prefers-color-scheme: light) {
+    body {
+      #catppuccin(@lightFlavor, @accentColor);
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      #catppuccin(@darkFlavor, @accentColor);
+    }
+  }
 }
