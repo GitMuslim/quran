@@ -49,13 +49,6 @@
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 2. Then install with Stylus ([click on the link](https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css)):
 3. Choose Your accent color by Setting Theme in Stylus Options
-<details>
-<summary>
-4. Make sure your base quran theme is set to auto mode
-</summary>
-
-![Help image](./assets/set-to-auto.png)
-</details>
 
 ## 💝 Thanks to
 
