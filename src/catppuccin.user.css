@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.3.6
+@version 1.3.7
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for Quran
 @author GitMuslim
@@ -83,7 +83,9 @@
     --color-background-lighten: @crust;
     --color-background-elevated: @base;
     --color-background-inverse: @text;
-    --shadow-small: 0px 2px 4px rgba(0,0,0,.1);
+    --shadow-small: 0px 2px 4px fade(@color, @color_translucency);
+    --shadow-normal: 0px 4px 8px fade(@color, @color_translucency);
+    --shadow-large: 0 5px 10px fade(@color, @color_translucency);
     & when (@color_boxes = 0) {
         --shade-9: @crust;
         --color-background-alternative-faded: @crust;
