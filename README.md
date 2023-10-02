@@ -8,7 +8,7 @@
 <h3 align="center">
   Catppuccin for <a href="https://quran.com">Quran</a> and <a href="https://quranicaudio.com">QuranicAudio</a>
 
-  (and previous.quran.com)
+  (and [previous.quran.com](https://previous.quran.com))
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
