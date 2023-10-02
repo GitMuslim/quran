@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.3.9
+@version 1.4.0
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for Quran
 @author GitMuslim
@@ -190,9 +190,9 @@
         border: 1px solid @crust;
     }
     .Button_shadow__Epq7b:hover {
-      background-color: @mantle;
-      color: @color;
-      border: 1px solid @color;
+        background-color: @mantle;
+        color: @color;
+        border: 1px solid @color;
     }
     .HomePageHero_backgroundImage__iQe4N {
         & when (@lookup = latte) {
@@ -441,6 +441,9 @@
             color: @base;
         }
     }
+    .player-section .player__controls .icon-play1::before {
+        color: @color;
+    }
     .green-image::before {
         background-color: fade(@color, 60%);
     }
@@ -495,6 +498,110 @@
     .tabs__item--selected {
         background-color: fade(@color, 30%) !important;
         color: @color !important;
+    }
+    .player-section {
+        background: @crust !important;
+    }
+    .selected::before {
+        color: @color !important;
+    }
+    .player-section .player__controls .icon-link::before, .player-section .player__controls .icon-next::before, .player-section .player__controls .icon-prev::before, .player-section .player__controls .icon-repeat::before {
+        color: @subtext0;
+    }
+    .player-section .player__bar p {
+        color: @text;
+    }
+    /*.player-section .player__bar #player-range {
+        background:
+    }*/
+    .theme-switch__button {
+        border: 1px solid @text;
+        background-color: @base;
+    }
+    .theme-switch__button.active {
+        background-color: fade(@color, 25%);
+        border-color: @color;
+    }
+    .site-menu {
+        background-color: @base;
+    }
+    .content-page a.text--large2:not(.btn), .content-page a.text--large:not(.btn), .content-page a.text--xlarge:not(.btn), .content-page h1, .content-page h5.text--large, .content-page h5.text--large2, .content-page h5.text--xlarge, .content-page p.text--large, .content-page p.text--large2, .content-page p.text--xlarge, .content-page a.text--large2:not(.btn), .content-page a.text--large:not(.btn), .content-page a.text--xlarge:not(.btn), .content-page h1, .content-page h5.text--large, .content-page h5.text--large2, .content-page h5.text--xlarge, .content-page p.text--large, .content-page p.text--large2, .content-page p.text--xlarge, .text.text--large, .text.text--large2, .text.text--xlarge {
+        color: @text;
+    }
+    .site-menu__items a, .site-menu__sites a {
+        color: @text;
+    }
+    .site-menu__items a:hover, .site-menu__sites a:hover {
+        background-color: @surface0;
+    }
+    .site-menu__items a:hover p, .site-menu__sites a:hover p {
+        color: @text !important;
+    }
+    .close-fonts::before, .close-reciters::before, .close-settings::before, .close-translations::before, .icon-x::before {
+        color: @text;
+    }
+    .menus .menus__tab {
+        background-color: @base;
+    }
+    .counter__text {
+        color: @text;
+    }
+    .btn--settings {
+        background-color: @surface0;
+        color: @text;
+    }
+    .btn--lightgreen {
+        background-color: fade(@color, 50%);
+        color: @color;
+    }
+    .tabs__item:hover {
+        color: @color;
+    }
+    .tabs__item {
+        color: @subtext0;
+    }
+    .tabs {
+        border-color: @subtext0;
+    }
+    .content-page h1, .content-page h1, .text--black {
+        color: @text;
+    }
+    .menu-item__link p {
+        color: @text !important;
+    }
+    .player-section .player__controls .icon-pause::before {
+        color: @color;
+    }
+    .translation__item .translation__icons .translation__icon .icon-pause::before {
+        color: @color;
+    }
+    .tooltip-inner {
+        background-color: @color;
+        color: @base;
+    }
+    & when (@color_ayah_background = 0) {
+        .verse.highlight {
+            background: @mantle;
+        }   
+    }
+    & when (@color_ayah_background = 1) {
+        .verse.highlight {
+            background: fade(@color, @color_translucency);
+        }
+    }
+    .quran-logo {
+        & when (@lookup = latte) {
+            content:url("https://raw.githubusercontent.com/GitMuslim/quran/main/assets/quran_latte.png")
+        }
+        & when (@lookup = frappe) {
+            content:url("https://raw.githubusercontent.com/GitMuslim/quran/main/assets/quran_frappe.png")
+        }
+        & when (@lookup = macchiato) {
+            content:url("https://raw.githubusercontent.com/GitMuslim/quran/main/assets/quran_macchiato.png")
+        }
+        & when (@lookup = mocha) {
+            content:url("https://raw.githubusercontent.com/GitMuslim/quran/main/assets/quran_mocha.png")
+        }
     }
   }
 
