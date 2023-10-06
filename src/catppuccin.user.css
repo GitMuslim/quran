@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.4.0
+@version 1.4.1
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for Quran
 @author GitMuslim
@@ -22,6 +22,8 @@
 @var text ayah_border_radius "Ayah Border Radius" 30px
 @var checkbox color_background_ayah_buttons "Color background of Ayah buttons" 1
 @var text color_translucency "Color Translucency" 17.5%
+@var checkbox ayah_border "Ayah Border" 0
+@var text ayah_border_size "Ayah Border Size" 1px
 @var checkbox color_sidemenu_icons "Color Sidemenu icons (on hover)" 0
 @var checkbox qa_bg "(QuranicAudio) use background in Surah list" 1
 ==/UserStyle== */
@@ -135,6 +137,11 @@
     & when (@color_ayah_background = 1) {
         .TranslationViewCell_highlightedContainer__iR1i_ {
             background: fade(@color, @color_translucency);
+        }
+    }
+    & when (@ayah_border = 1) {
+        .TranslationViewCell_highlightedContainer__iR1i_ {
+            border: @ayah_border_size solid @color;
         }
     }
     & when (@color_top_bar = 0) {
