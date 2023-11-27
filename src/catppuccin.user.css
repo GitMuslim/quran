@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.4.2
+@version 1.4.3
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for Quran
 @author GitMuslim
@@ -186,11 +186,11 @@
         fill: @overlay0;
     }
     .Tooltip_content__I7VNE {
-        color: @text;
-        background: @crust;
+        color: @base;
+        background: @text;
     }
     .Tooltip_content__I7VNE > span {
-        fill: @crust;
+        fill: @text;
     }
     .Button_shadow__Epq7b {
         background-color: @base;
