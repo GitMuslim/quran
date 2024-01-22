@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.4.7
+@version 1.4.8
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @supportURL https://github.com/GitMuslim/quran/issues
 @description Soothing pastel theme for Quran
@@ -19,7 +19,7 @@
 @var checkbox color_top_bar "Color Top Bar (Audio Player)" 1
 @var checkbox color_boxes "Color Boxes" 0
 @var checkbox color_ayah_background "Color Ayah Background" 0
-@var checkbox color_small_shadow "Color Top Bar Shadow" 1
+@var checkbox color_shadow "Color Shadow" 1
 @var checkbox rounded_ayah_border "Rounded Ayah Border" 0
 @var text ayah_border_radius "Ayah Border Radius" 30px
 @var checkbox color_background_ayah_buttons "Color background of Ayah buttons" 1
@@ -93,14 +93,16 @@
     --color-background-inverse: @text;
     --color-warning-medium: @color;
     --color-primary-deep: @base;
-    & when (@color_small_shadow = 0) {
+    & when (@color_shadow = 0) {
       --shadow-small: 0px 2px 4px @crust;
+      --shadow-normal: 0px 4px 8px @crust;
+      --shadow-large: 0 5px 10px @crust;
     }
-    & when (@color_small_shadow = 1) {
+    & when (@color_shadow = 1) {
       --shadow-small: 0px 2px 4px fade(@color, @color_translucency);
+      --shadow-normal: 0px 4px 8px fade(@color, @color_translucency);
+      --shadow-large: 0 5px 10px fade(@color, @color_translucency);
     }
-    --shadow-normal: 0px 4px 8px @crust;
-    --shadow-large: 0 5px 10px @crust;
     & when (@color_boxes = 0) {
       --shade-9: @crust;
       --color-background-alternative-faded: @mantle;
