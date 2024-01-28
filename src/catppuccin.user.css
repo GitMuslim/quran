@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.4.8
+@version 1.4.9
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @supportURL https://github.com/GitMuslim/quran/issues
 @description Soothing pastel theme for Quran
@@ -93,6 +93,11 @@
     --color-background-inverse: @text;
     --color-warning-medium: @color;
     --color-primary-deep: @base;
+    & when (@lookup = latte) {
+      --color-background-default: @base;
+      --color-background-alternative-faint: @mantle;
+      --color-success-faded: fade(@color, 7.5%);
+    }
     & when (@color_shadow = 0) {
       --shadow-small: 0px 2px 4px @crust;
       --shadow-normal: 0px 4px 8px @crust;
@@ -114,6 +119,9 @@
     .SurahPreviewRow_container__3ZfRV:hover {
       & when (@color_surah_boxes = 0) {
         background-color: @crust;
+         & when (@lookup = latte) {
+          background-color: @base;
+        }
       }
       & when (@color_surah_boxes = 1) {
         background-color: fade(@color, @color_translucency);
@@ -122,6 +130,9 @@
     .SurahPreviewBlock_container__ME6vO:hover {
       & when (@color_recently_read_boxes = 0) {
         background-color: @crust;
+        & when (@lookup = latte) {
+          background-color: @base;
+        }
       }
       & when (@color_recently_read_boxes = 1) {
         background-color: fade(@color, @color_translucency);
