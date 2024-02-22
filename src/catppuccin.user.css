@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.4.9
+@version 1.5.0
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @supportURL https://github.com/GitMuslim/quran/issues
 @description Soothing pastel theme for Quran
@@ -483,7 +483,7 @@
       color: var(--color-text-inverse)
     }
     ._1H46zEgAStEOGdfkgHL9HG .xgAnHe4c5O24IQNBuL8rq, ._1H46zEgAStEOGdfkgHL9HG ._2fTQ0vFZu9HHdD20j8QY-c, ._1SVM-0tZyIzXklpVqixa6j:hover, ._18jCXzG3xrUhu4K2ZWmmml._1SVM-0tZyIzXklpVqixa6j:hover {
-      border-color: @surface0;
+      border-color: @surface1;
       color: @base;
       background: @color;
     }
@@ -494,7 +494,7 @@
       border-color: @color;
     }
     .hLTAXKkUW9EfB9pOrI7-Z ._5WIiQPaLUf0lWAOewyKww + ._5WIiQPaLUf0lWAOewyKww, ._1H46zEgAStEOGdfkgHL9HG ._30dOSQzFmBDI-CrRtAEr1P::after {
-      border-color: @surface0 !important;
+      border-color: @surface1 !important;
     }
     ._1H46zEgAStEOGdfkgHL9HG, .container-fluid, .col-md-12 {
       background: @base;
@@ -503,7 +503,7 @@
       color: @text;
     }
     .hLTAXKkUW9EfB9pOrI7-Z ._5WIiQPaLUf0lWAOewyKww:hover, ._3S_wx_oujN5yF0Tq6rbG-1._23ONANtGWd1NzQ3LRlP0Z0, ._3W_0Bn_sqt01QcfPLJrefl, ._1H46zEgAStEOGdfkgHL9HG ._3WKKfenprs1hYlsRF-xOtp:hover {
-      background-color: @mantle;
+      background-color: @surface0;
     }
     .YuRhw1tjUohnA3r6u0TTU, ._18oxLw1FmKJHSCQOsQuafs {
       background-color: @color;
@@ -514,7 +514,7 @@
       background-color: fade(@color, @color_translucency);
     }
     .hLTAXKkUW9EfB9pOrI7-Z ._5WIiQPaLUf0lWAOewyKww, .list-group-item {
-      border-color: @surface0;
+      border-color: @surface1;
     }
     .Cavg2Jjg5D0kWBsE8Ux-t {
       color: @subtext0;
@@ -525,7 +525,7 @@
       background-color: @base;
     }
     .IgYnElK5ORncUB4cDlh8K ._1NV2APm6gAoMUCVYTL379T, ._3W_0Bn_sqt01QcfPLJrefl._3JFcH6PTnmtKeVCwtAJRY9 {
-      background-color: @crust !important;
+      background-color: @surface0 !important;
     }
     ._18jCXzG3xrUhu4K2ZWmmml._1zKzpXJzTBEGlJDkvJv0DZ, ._18jCXzG3xrUhu4K2ZWmmml._1SVM-0tZyIzXklpVqixa6j {
       color: @color;
