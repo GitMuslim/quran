@@ -19,7 +19,7 @@
 @var checkbox color_top_bar "Color Top Bar (Audio Player)" 1
 @var checkbox color_boxes "Color Boxes" 0
 @var checkbox color_ayah_background "Color Ayah Background" 0
-@var checkbox color_shadow "Color Shadow" 1
+@var checkbox color_shadow "Color Shadow" 0
 @var checkbox rounded_ayah_border "Rounded Ayah Border" 0
 @var text ayah_border_radius "Ayah Border Radius" 30px
 @var checkbox color_background_ayah_buttons "Color background of Ayah buttons" 1
