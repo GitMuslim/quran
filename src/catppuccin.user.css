@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.5.3
+@version 1.5.4
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @supportURL https://github.com/GitMuslim/quran/issues
 @description Soothing pastel theme for Quran
@@ -20,11 +20,10 @@
 @var checkbox color_boxes "Color Boxes" 0
 @var checkbox color_ayah_background "Color Ayah Background" 0
 @var checkbox color_shadow "Color Shadow" 0
-@var checkbox rounded_ayah_border "Rounded Ayah Border" 0
+@var checkbox rounded_ayah_border "Rounded Ayah Border" 1
 @var text ayah_border_radius "Ayah Border Radius" 30px
-@var checkbox color_background_ayah_buttons "Color background of Ayah buttons" 1
 @var text color_translucency "Color Translucency" 17%
-@var checkbox ayah_border "Ayah Border" 0
+@var checkbox ayah_border "Ayah Border" 1
 @var text ayah_border_size "Ayah Border Size" 1px
 @var checkbox color_sidemenu_icons "Color Sidemenu icons (on hover)" 0
 @var checkbox qa_bg "(QuranicAudio) use background in Surah list" 1
@@ -153,14 +152,24 @@
     .TranslationViewCell_highlightedContainer__iR1i_ {
       & when (@color_ayah_background = 0) {
         background: @mantle;
-      }   
-      & when (@color_ayah_background = 1) {
-        background: fade(@color, @color_translucency);
+        & when (@ayah_border = 1) {
+          border: @ayah_border_size solid @surface0;
+          & when (@ayah_border_size = 1px) {
+            border: none;
+            border-left: 1px solid @surface0;
+            border-right: 1px solid @surface0;
+          }
+        }
       }
-    }
-    & when (@ayah_border = 1) {
-      .TranslationViewCell_highlightedContainer__iR1i_ {
-        border: @ayah_border_size solid @color;
+      & when (@color_ayah_background = 1) {
+        .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
+          background-image: linear-gradient(to right,fade(@color, @color_translucency),fade(@color, @color_translucency));
+          background-color: fade(@color, @color_translucency);
+        }
+        background: fade(@color, @color_translucency);
+        & when (@ayah_border = 1) {
+          border: @ayah_border_size solid @color;
+        }
       }
     }
     & when (@color_top_bar = 0) {
@@ -177,14 +186,6 @@
         margin-left: auto;
         margin-right: auto;
         width: ((100% - ((@ayah_border_radius / 10)*1%))-@ayah_border_radius/30)
-      }
-    }
-    & when (@color_background_ayah_buttons = 1) {
-      .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
-        background-image: linear-gradient(to right,fade(@color, @color_translucency),fade(@color, @color_translucency));
-      }
-      .TranslationViewCell_iconContainer__7hDOA.TranslationViewCell_verseAction__oJZAI:hover {
-        background-color: fade(@color, @color_translucency);
       }
     }
     [data-theme="light"] {
