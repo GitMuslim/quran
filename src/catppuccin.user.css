@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.5.2
+@version 1.5.3
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @supportURL https://github.com/GitMuslim/quran/issues
 @description Soothing pastel theme for Quran
@@ -172,6 +172,11 @@
     & when (@rounded_ayah_border = 1) {
       .TranslationViewCell_cellContainer__rhs1_ {
         border-radius: @ayah_border_radius;
+      }
+      .Separator_base__2kP0d[data-orientation="horizontal"] {
+        margin-left: auto;
+        margin-right: auto;
+        width: ((100% - ((@ayah_border_radius / 10)*1%))-@ayah_border_radius/30)
       }
     }
     & when (@color_background_ayah_buttons = 1) {
