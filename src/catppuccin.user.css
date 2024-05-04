@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.5.6
+@version 1.5.7
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @supportURL https://github.com/GitMuslim/quran/issues
 @description Soothing pastel theme for Quran and QuranicAudio (and previous.quran.com) 
@@ -88,7 +88,7 @@
     --color-success-faint: fade(@color, 20%);
     --color-text-default: @text;
     --color-text-faded: @subtext0;
-    --color-background-lighten: @surface0;
+    --color-background-lighten: @mantle;
     --color-background-elevated: @base;
     --color-background-inverse: @text;
     --color-warning-medium: @color;
@@ -195,7 +195,7 @@
       --color-text-inverse: #FFFFFF;
       --color-text-default: @text;
       --color-text-faded: @subtext0;
-      --color-background-lighten: @surface0;
+      --color-background-lighten: @mantle;
       --color-background-alternative-faint: @base;
       --color-highlight: fade(@color, @color_translucency);
       .CommandBarTrigger_container__g1Ziu {
