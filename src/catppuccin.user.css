@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.5.8
+@version 1.5.9
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @supportURL https://github.com/GitMuslim/quran/issues
 @description Soothing pastel theme for Quran and QuranicAudio (and previous.quran.com) 
@@ -310,7 +310,7 @@
     .site-menu, .menus .menus__tab {
       background-color: @base;
     }
-    .logo, .language, .theme-switch__label, .content-page a.text--grey:not(.btn), .content-page h1.text--grey.text--medium, .content-page h5.text--grey, .content-page p, .content-page a.text--grey:not(.btn), .content-page h1.text--grey.text--medium, .content-page h5.text--grey, .content-page p, .text.text--grey.text--medium, .surah-card__arabic p, .label--title, .arabic, .content-page a.text--large2:not(.btn), .content-page a.text--large:not(.btn), .content-page a.text--xlarge:not(.btn), .content-page h1, .content-page h5.text--large, .content-page h5.text--large2, .content-page h5.text--xlarge, .content-page p.text--large, .content-page p.text--large2, .content-page p.text--xlarge, .content-page a.text--large2:not(.btn), .content-page a.text--large:not(.btn), .content-page a.text--xlarge:not(.btn), .content-page h1, .content-page h5.text--large, .content-page h5.text--large2, .content-page h5.text--xlarge, .content-page p.text--large, .content-page p.text--large2, .content-page p.text--xlarge, .text.text--large, .text.text--large2, .text.text--xlarge, .player-section .player__bar p, .site-menu__items a, .site-menu__sites a, .content-page a.text--semibold:not(.btn), .content-page h1.text--medium, .content-page h5, .content-page p.text--semibold, .content-page a.text--semibold:not(.btn), .content-page h1.text--medium, .content-page h5, .content-page p.text--semibold, .text.text--medium.text--semibold, .content-page h1, .content-page h1, .text--black, .menu-item__link p, .counter__text, .site-menu__items a:hover p, .site-menu__sites a:hover p, .close-fonts::before, .close-reciters::before, .close-settings::before, .close-translations::before, .icon-x::before, .btn--arrow-down::before, .surah-card__latin h5 {
+    .language, .theme-switch__label, .content-page a.text--grey:not(.btn), .content-page h1.text--grey.text--medium, .content-page h5.text--grey, .content-page p, .content-page a.text--grey:not(.btn), .content-page h1.text--grey.text--medium, .content-page h5.text--grey, .content-page p, .text.text--grey.text--medium, .surah-card__arabic p, .label--title, .arabic, .content-page a.text--large2:not(.btn), .content-page a.text--large:not(.btn), .content-page a.text--xlarge:not(.btn), .content-page h1, .content-page h5.text--large, .content-page h5.text--large2, .content-page h5.text--xlarge, .content-page p.text--large, .content-page p.text--large2, .content-page p.text--xlarge, .content-page a.text--large2:not(.btn), .content-page a.text--large:not(.btn), .content-page a.text--xlarge:not(.btn), .content-page h1, .content-page h5.text--large, .content-page h5.text--large2, .content-page h5.text--xlarge, .content-page p.text--large, .content-page p.text--large2, .content-page p.text--xlarge, .text.text--large, .text.text--large2, .text.text--xlarge, .player-section .player__bar p, .site-menu__items a, .site-menu__sites a, .content-page a.text--semibold:not(.btn), .content-page h1.text--medium, .content-page h5, .content-page p.text--semibold, .content-page a.text--semibold:not(.btn), .content-page h1.text--medium, .content-page h5, .content-page p.text--semibold, .text.text--medium.text--semibold, .content-page h1, .content-page h1, .text--black, .menu-item__link p, .counter__text, .site-menu__items a:hover p, .site-menu__sites a:hover p, .close-fonts::before, .close-reciters::before, .close-settings::before, .close-translations::before, .icon-x::before, .btn--arrow-down::before, .surah-card__latin h5 {
       color: @text !important;
     }
     .label--subtitle, .translation__item .translation__icons .translation__icon, .tabs__item, .surah-card__latin p {
@@ -322,7 +322,7 @@
     .bs-tooltip-top .arrow::before {
       border-top-color: @color;
     }
-    .content-page h1.green, .word.highlight, .word:hover, .content-page a:not(.btn), .translation__item .translation__icons .translation__icon .icon-play1::before, .content-page a:not(.btn), .text--green, .translation__text sup, .selected::before, .player-section .player__controls .icon-play1::before, .tabs__item:hover, .player-section .player__controls .icon-pause::before, .translation__item .translation__icons .translation__icon .icon-pause::before {
+    .logo, .content-page h1.green, .word.highlight, .word:hover, .content-page a:not(.btn), .translation__item .translation__icons .translation__icon .icon-play1::before, .content-page a:not(.btn), .text--green, .translation__text sup, .selected::before, .player-section .player__controls .icon-play1::before, .tabs__item:hover, .player-section .player__controls .icon-pause::before, .translation__item .translation__icons .translation__icon .icon-pause::before {
       color: @color !important;
     }
     ::placeholder {
@@ -357,7 +357,7 @@
       background-color: fade(@color, 60%);
     }
     .footer, .navbar, .player-section {
-      background-color: @crust !important;
+      background-color: @surface1 !important;
     }
     .input-wrapper .icon-search, .tooltip-inner {
       background-color: @color;
