@@ -2,7 +2,7 @@
 @name Quran Catppuccin
 @namespace github.com/GitMuslim/quran
 @homepageURL https://github.com/GitMuslim/quran
-@version 1.5.9
+@version 1.6.0
 @updateURL https://github.com/GitMuslim/quran/raw/main/src/catppuccin.user.css
 @supportURL https://github.com/GitMuslim/quran/issues
 @description Soothing pastel theme for Quran and QuranicAudio (and previous.quran.com) 
@@ -413,6 +413,107 @@
         content:url("https://raw.githubusercontent.com/GitMuslim/quran/main/assets/quran_mocha.png")
       }
     }
+    input#player-range[style*="rgb(255, 255, 255) 0"] { background: linear-gradient(to right, @color 0%, @color 0%, rgb(255, 255, 255) 0%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 1"] { background: linear-gradient(to right, @color 0%, @color 1%, rgb(255, 255, 255) 1%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 2"] { background: linear-gradient(to right, @color 0%, @color 2%, rgb(255, 255, 255) 2%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 3"] { background: linear-gradient(to right, @color 0%, @color 3%, rgb(255, 255, 255) 3%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 4"] { background: linear-gradient(to right, @color 0%, @color 4%, rgb(255, 255, 255) 4%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 5"] { background: linear-gradient(to right, @color 0%, @color 5%, rgb(255, 255, 255) 5%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 6"] { background: linear-gradient(to right, @color 0%, @color 6%, rgb(255, 255, 255) 6%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 7"] { background: linear-gradient(to right, @color 0%, @color 7%, rgb(255, 255, 255) 7%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 8"] { background: linear-gradient(to right, @color 0%, @color 8%, rgb(255, 255, 255) 8%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 9"] { background: linear-gradient(to right, @color 0%, @color 9%, rgb(255, 255, 255) 9%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 10"] { background: linear-gradient(to right, @color 0%, @color 10%, rgb(255, 255, 255) 10%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 11"] { background: linear-gradient(to right, @color 0%, @color 11%, rgb(255, 255, 255) 11%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 12"] { background: linear-gradient(to right, @color 0%, @color 12%, rgb(255, 255, 255) 12%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 13"] { background: linear-gradient(to right, @color 0%, @color 13%, rgb(255, 255, 255) 13%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 14"] { background: linear-gradient(to right, @color 0%, @color 14%, rgb(255, 255, 255) 14%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 15"] { background: linear-gradient(to right, @color 0%, @color 15%, rgb(255, 255, 255) 15%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 16"] { background: linear-gradient(to right, @color 0%, @color 16%, rgb(255, 255, 255) 16%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 17"] { background: linear-gradient(to right, @color 0%, @color 17%, rgb(255, 255, 255) 17%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 18"] { background: linear-gradient(to right, @color 0%, @color 18%, rgb(255, 255, 255) 18%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 19"] { background: linear-gradient(to right, @color 0%, @color 19%, rgb(255, 255, 255) 19%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 20"] { background: linear-gradient(to right, @color 0%, @color 20%, rgb(255, 255, 255) 20%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 21"] { background: linear-gradient(to right, @color 0%, @color 21%, rgb(255, 255, 255) 21%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 22"] { background: linear-gradient(to right, @color 0%, @color 22%, rgb(255, 255, 255) 22%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 23"] { background: linear-gradient(to right, @color 0%, @color 23%, rgb(255, 255, 255) 23%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 24"] { background: linear-gradient(to right, @color 0%, @color 24%, rgb(255, 255, 255) 24%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 25"] { background: linear-gradient(to right, @color 0%, @color 25%, rgb(255, 255, 255) 25%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 26"] { background: linear-gradient(to right, @color 0%, @color 26%, rgb(255, 255, 255) 26%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 27"] { background: linear-gradient(to right, @color 0%, @color 27%, rgb(255, 255, 255) 27%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 28"] { background: linear-gradient(to right, @color 0%, @color 28%, rgb(255, 255, 255) 28%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 29"] { background: linear-gradient(to right, @color 0%, @color 29%, rgb(255, 255, 255) 29%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 30"] { background: linear-gradient(to right, @color 0%, @color 30%, rgb(255, 255, 255) 30%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 31"] { background: linear-gradient(to right, @color 0%, @color 31%, rgb(255, 255, 255) 31%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 32"] { background: linear-gradient(to right, @color 0%, @color 32%, rgb(255, 255, 255) 32%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 33"] { background: linear-gradient(to right, @color 0%, @color 33%, rgb(255, 255, 255) 33%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 34"] { background: linear-gradient(to right, @color 0%, @color 34%, rgb(255, 255, 255) 34%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 35"] { background: linear-gradient(to right, @color 0%, @color 35%, rgb(255, 255, 255) 35%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 36"] { background: linear-gradient(to right, @color 0%, @color 36%, rgb(255, 255, 255) 36%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 37"] { background: linear-gradient(to right, @color 0%, @color 37%, rgb(255, 255, 255) 37%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 38"] { background: linear-gradient(to right, @color 0%, @color 38%, rgb(255, 255, 255) 38%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 39"] { background: linear-gradient(to right, @color 0%, @color 39%, rgb(255, 255, 255) 39%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 40"] { background: linear-gradient(to right, @color 0%, @color 40%, rgb(255, 255, 255) 40%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 41"] { background: linear-gradient(to right, @color 0%, @color 41%, rgb(255, 255, 255) 41%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 42"] { background: linear-gradient(to right, @color 0%, @color 42%, rgb(255, 255, 255) 42%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 43"] { background: linear-gradient(to right, @color 0%, @color 43%, rgb(255, 255, 255) 43%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 44"] { background: linear-gradient(to right, @color 0%, @color 44%, rgb(255, 255, 255) 44%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 45"] { background: linear-gradient(to right, @color 0%, @color 45%, rgb(255, 255, 255) 45%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 46"] { background: linear-gradient(to right, @color 0%, @color 46%, rgb(255, 255, 255) 46%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 47"] { background: linear-gradient(to right, @color 0%, @color 47%, rgb(255, 255, 255) 47%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 48"] { background: linear-gradient(to right, @color 0%, @color 48%, rgb(255, 255, 255) 48%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 49"] { background: linear-gradient(to right, @color 0%, @color 49%, rgb(255, 255, 255) 49%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 50"] { background: linear-gradient(to right, @color 0%, @color 50%, rgb(255, 255, 255) 50%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 51"] { background: linear-gradient(to right, @color 0%, @color 51%, rgb(255, 255, 255) 51%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 52"] { background: linear-gradient(to right, @color 0%, @color 52%, rgb(255, 255, 255) 52%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 53"] { background: linear-gradient(to right, @color 0%, @color 53%, rgb(255, 255, 255) 53%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 54"] { background: linear-gradient(to right, @color 0%, @color 54%, rgb(255, 255, 255) 54%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 55"] { background: linear-gradient(to right, @color 0%, @color 55%, rgb(255, 255, 255) 55%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 56"] { background: linear-gradient(to right, @color 0%, @color 56%, rgb(255, 255, 255) 56%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 57"] { background: linear-gradient(to right, @color 0%, @color 57%, rgb(255, 255, 255) 57%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 58"] { background: linear-gradient(to right, @color 0%, @color 58%, rgb(255, 255, 255) 58%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 59"] { background: linear-gradient(to right, @color 0%, @color 59%, rgb(255, 255, 255) 59%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 60"] { background: linear-gradient(to right, @color 0%, @color 60%, rgb(255, 255, 255) 60%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 61"] { background: linear-gradient(to right, @color 0%, @color 61%, rgb(255, 255, 255) 61%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 62"] { background: linear-gradient(to right, @color 0%, @color 62%, rgb(255, 255, 255) 62%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 63"] { background: linear-gradient(to right, @color 0%, @color 63%, rgb(255, 255, 255) 63%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 64"] { background: linear-gradient(to right, @color 0%, @color 64%, rgb(255, 255, 255) 64%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 65"] { background: linear-gradient(to right, @color 0%, @color 65%, rgb(255, 255, 255) 65%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 66"] { background: linear-gradient(to right, @color 0%, @color 66%, rgb(255, 255, 255) 66%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 67"] { background: linear-gradient(to right, @color 0%, @color 67%, rgb(255, 255, 255) 67%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 68"] { background: linear-gradient(to right, @color 0%, @color 68%, rgb(255, 255, 255) 68%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 69"] { background: linear-gradient(to right, @color 0%, @color 69%, rgb(255, 255, 255) 69%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 70"] { background: linear-gradient(to right, @color 0%, @color 70%, rgb(255, 255, 255) 70%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 71"] { background: linear-gradient(to right, @color 0%, @color 71%, rgb(255, 255, 255) 71%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 72"] { background: linear-gradient(to right, @color 0%, @color 72%, rgb(255, 255, 255) 72%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 73"] { background: linear-gradient(to right, @color 0%, @color 73%, rgb(255, 255, 255) 73%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 74"] { background: linear-gradient(to right, @color 0%, @color 74%, rgb(255, 255, 255) 74%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 75"] { background: linear-gradient(to right, @color 0%, @color 75%, rgb(255, 255, 255) 75%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 76"] { background: linear-gradient(to right, @color 0%, @color 76%, rgb(255, 255, 255) 76%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 77"] { background: linear-gradient(to right, @color 0%, @color 77%, rgb(255, 255, 255) 77%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 78"] { background: linear-gradient(to right, @color 0%, @color 78%, rgb(255, 255, 255) 78%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 79"] { background: linear-gradient(to right, @color 0%, @color 79%, rgb(255, 255, 255) 79%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 80"] { background: linear-gradient(to right, @color 0%, @color 80%, rgb(255, 255, 255) 80%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 81"] { background: linear-gradient(to right, @color 0%, @color 81%, rgb(255, 255, 255) 81%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 82"] { background: linear-gradient(to right, @color 0%, @color 82%, rgb(255, 255, 255) 82%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 83"] { background: linear-gradient(to right, @color 0%, @color 83%, rgb(255, 255, 255) 83%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 84"] { background: linear-gradient(to right, @color 0%, @color 84%, rgb(255, 255, 255) 84%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 85"] { background: linear-gradient(to right, @color 0%, @color 85%, rgb(255, 255, 255) 85%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 86"] { background: linear-gradient(to right, @color 0%, @color 86%, rgb(255, 255, 255) 86%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 87"] { background: linear-gradient(to right, @color 0%, @color 87%, rgb(255, 255, 255) 87%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 88"] { background: linear-gradient(to right, @color 0%, @color 88%, rgb(255, 255, 255) 88%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 89"] { background: linear-gradient(to right, @color 0%, @color 89%, rgb(255, 255, 255) 89%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 90"] { background: linear-gradient(to right, @color 0%, @color 90%, rgb(255, 255, 255) 90%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 91"] { background: linear-gradient(to right, @color 0%, @color 91%, rgb(255, 255, 255) 91%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 92"] { background: linear-gradient(to right, @color 0%, @color 92%, rgb(255, 255, 255) 92%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 93"] { background: linear-gradient(to right, @color 0%, @color 93%, rgb(255, 255, 255) 93%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 94"] { background: linear-gradient(to right, @color 0%, @color 94%, rgb(255, 255, 255) 94%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 95"] { background: linear-gradient(to right, @color 0%, @color 95%, rgb(255, 255, 255) 95%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 96"] { background: linear-gradient(to right, @color 0%, @color 96%, rgb(255, 255, 255) 96%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 97"] { background: linear-gradient(to right, @color 0%, @color 97%, rgb(255, 255, 255) 97%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 98"] { background: linear-gradient(to right, @color 0%, @color 98%, rgb(255, 255, 255) 98%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 99"] { background: linear-gradient(to right, @color 0%, @color 99%, rgb(255, 255, 255) 99%, white 100%) !important; }
+    input#player-range[style*="rgb(255, 255, 255) 100"] { background: linear-gradient(to right, @color 0%, @color 100%, rgb(255, 255, 255) 100%, white 100%) !important; }
     .language-wrapper::after {
       @svg-raw: '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve"><g><g><path fill="@{color}" d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734    L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8    C342.889,227.058,342.889,216.255,336.226,209.591z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>';
       @svg: escape(@svg-raw);
